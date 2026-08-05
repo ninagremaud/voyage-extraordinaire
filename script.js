@@ -1,37 +1,16 @@
-const startButton=document.getElementById("startButton");
-
 const cover=document.getElementById("cover");
+const intro=document.getElementById("intro");
 
-const chapter=document.getElementById("chapter");
-
-const unlockButton=document.getElementById("unlockButton");
-
-const password=document.getElementById("password");
-
-const message=document.getElementById("message");
-
-startButton.onclick=()=>{
+document.getElementById("begin").onclick=function(){
 
 cover.style.display="none";
 
-chapter.classList.remove("hidden");
+intro.classList.remove("hidden");
 
-}
+};
 
-unlockButton.onclick=()=>{
+document.getElementById("next").onclick=function(){
 
-if(password.value.toLowerCase()=="shire"){
+alert("Le chapitre I arrivera ensuite 🙂");
 
-message.innerHTML="✨ Le premier chapitre sera bientôt révélé.";
-
-message.style.color="green";
-
-}else{
-
-message.innerHTML="Le Livre Rouge demeure silencieux...";
-
-message.style.color="darkred";
-
-}
-
-}
+};
