@@ -172,47 +172,37 @@ content.innerHTML=html;
 
 function verifier(){
 
-let reponse=document.getElementById("reponse").value.toLowerCase();
+    let reponse = document.getElementById("reponse").value.toLowerCase();
 
-let chapitre=chapitres[chapitreActuel];
+    let chapitre = chapitres[chapitreActuel];
 
-if(reponse===chapitre.reponse){
+    if(reponse === chapitre.reponse){
 
-document.getElementById("resultat").innerHTML=
+        document.getElementById("resultat").innerHTML = `
 
-`
+        <hr>
 
-<br>
+        <h3>Le chemin se dévoile...</h3>
 
-document.getElementById("resultat").innerHTML=
+        <p>${chapitre.indice}</p>
 
-`
+        <button onclick="suivant()">
 
-<hr>
+            Poursuivre le Voyage
 
-<h3>Le chemin se dévoile...</h3>
+        </button>
 
-<p>
+        `;
 
-${chapitre.indice}
+    }
 
-</p>
+    else{
 
-<button onclick="suivant()">
+        document.getElementById("resultat").innerHTML =
 
-Poursuivre le Voyage
+        "❌ Ce n'est pas la bonne réponse.";
 
-</button>
-
-`;
-
-else{
-
-document.getElementById("resultat").innerHTML=
-
-"❌ Ce n'est pas la bonne réponse.";
-
-}
+    }
 
 }
 
