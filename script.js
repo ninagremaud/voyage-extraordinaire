@@ -271,3 +271,24 @@ Le reste du voyage sera ajouté prochainement.
 }
 
 }
+function machineAEcrire(element, texte){
+
+element.innerHTML="";
+
+let i=0;
+
+const timer=setInterval(()=>{
+
+element.innerHTML+=texte.charAt(i);
+
+i++;
+
+if(i>=texte.length){
+
+clearInterval(timer);
+
+}
+
+},18);
+
+}
