@@ -5,14 +5,7 @@ padding:40px;
 
 font-family:"Cormorant Garamond",serif;
 
-background-color:#3a2818;
-
-background-image:
-linear-gradient(rgba(58,40,24,.55),rgba(58,40,24,.55)),
-url("https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-background-attachment:fixed;
+background:#3b2a1d;
 
 }
 
@@ -126,40 +119,19 @@ display:none;
 
 .page{
 
-background:
-linear-gradient(rgba(255,252,240,.92),rgba(242,230,197,.92)),
-url("https://www.transparenttextures.com/patterns/old-paper.png");
+background:#efe3bf;
 
 max-width:900px;
 
-margin:auto;
+margin:40px auto;
 
 padding:70px;
 
-box-shadow:
+border:1px solid #bda375;
 
-0 10px 40px rgba(0,0,0,.35);
+box-shadow:0 15px 40px rgba(0,0,0,.35);
 
-border:1px solid #ccb68a;
-
-position:relative;
-
-line-height:1.8;
-transform:rotate(-0.3deg);
-
-transition:all .8s ease;
-
-}
-
-p{
-
-font-size:24px;
-
-line-height:1.8;
-
-text-align:justify;
-
-color:#3c2a1a;
+border-radius:3px;
 
 }
 
