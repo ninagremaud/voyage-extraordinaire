@@ -178,13 +178,13 @@ machineAEcrire(histoire,texte);
 
 }
 
-function verifier(){
+function verifier() {
 
-    let reponse = document.getElementById("reponse").value.toLowerCase();
+    let reponse = document.getElementById("reponse").value.toLowerCase().trim();
 
     let chapitre = chapitres[chapitreActuel];
 
-    if(reponse === chapitre.reponse){
+    if (reponse === chapitre.reponse) {
 
         document.getElementById("resultat").innerHTML = `
 
@@ -196,13 +196,23 @@ function verifier(){
 
         <button onclick="suivant()">
 
-            Poursuivre le Voyage
+            Poursuivre le voyage
 
         </button>
 
         `;
 
     }
+
+    else {
+
+        document.getElementById("resultat").innerHTML =
+
+        "❌ Ce n'est pas la bonne réponse.";
+
+    }
+
+}
 
     else{
 
