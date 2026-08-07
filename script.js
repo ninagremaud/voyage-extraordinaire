@@ -208,9 +208,45 @@ function verifier(){
 
 function suivant(){
 
+const page=document.querySelector(".page");
+
+page.classList.add("fadeOut");
+
+setTimeout(()=>{
+
 if(chapitreActuel+1<chapitres.length){
 
 afficherChapitre(chapitreActuel+1);
+
+const nouvellePage=document.querySelector(".page");
+
+nouvellePage.classList.add("fadeIn");
+
+}
+
+else{
+
+content.innerHTML=`
+
+<div class="page fadeIn">
+
+<h2>La Fin... ou le commencement ?</h2>
+
+<p>
+
+Aucune histoire ne s'achève vraiment.
+
+Certaines continuent simplement de s'écrire.
+
+</p>
+
+</div>
+
+`;
+
+}
+
+},500);
 
 }
 
