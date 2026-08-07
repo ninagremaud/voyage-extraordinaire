@@ -168,6 +168,14 @@ Valider
 
 content.innerHTML=html;
 
+const histoire=document.querySelector(".histoire");
+
+if(histoire){
+
+const texte=histoire.innerText;
+
+machineAEcrire(histoire,texte);
+
 }
 
 function verifier(){
