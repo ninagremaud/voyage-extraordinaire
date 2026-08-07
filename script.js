@@ -168,16 +168,6 @@ Valider
 
 content.innerHTML=html;
 
-const histoire=document.querySelector(".histoire");
-
-if(histoire){
-
-const texte=histoire.innerText;
-
-machineAEcrire(histoire,texte);
-
-}
-
 function verifier() {
 
     let reponse = document.getElementById("reponse").value.toLowerCase().trim();
@@ -201,14 +191,6 @@ function verifier() {
         </button>
 
         `;
-
-    }
-
-    else {
-
-        document.getElementById("resultat").innerHTML =
-
-        "❌ Ce n'est pas la bonne réponse.";
 
     }
 
@@ -280,45 +262,32 @@ Certaines continuent simplement de s'écrire.
 
 }
 
-else{
+function suivant() {
 
-content.innerHTML=`
+    if (chapitreActuel + 1 < chapitres.length) {
 
-<div class="page">
+        afficherChapitre(chapitreActuel + 1);
 
-<h2>Fin de la démo</h2>
+    }
 
-<p>
+    else {
 
-Le reste du voyage sera ajouté prochainement.
+        content.innerHTML = `
 
-</p>
+        <div class="page">
 
-</div>
+            <h2>Épilogue</h2>
 
-`;
+            <p>
 
-}
+            La suite du voyage sera bientôt écrite...
 
-}
-function machineAEcrire(element, texte){
+            </p>
 
-element.innerHTML="";
+        </div>
 
-let i=0;
+        `;
 
-const timer=setInterval(()=>{
-
-element.innerHTML+=texte.charAt(i);
-
-i++;
-
-if(i>=texte.length){
-
-clearInterval(timer);
-
-}
-
-},18);
+    }
 
 }
