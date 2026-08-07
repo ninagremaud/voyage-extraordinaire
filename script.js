@@ -224,21 +224,33 @@ function verifier() {
 
 }
 
-function suivant(){
+function suivant() {
 
-const page=document.querySelector(".page");
+    if (chapitreActuel + 1 < chapitres.length) {
 
-page.classList.add("fadeOut");
+        afficherChapitre(chapitreActuel + 1);
 
-setTimeout(()=>{
+    }
 
-if(chapitreActuel+1<chapitres.length){
+    else {
 
-afficherChapitre(chapitreActuel+1);
+        content.innerHTML = `
 
-const nouvellePage=document.querySelector(".page");
+        <div class="page">
 
-nouvellePage.classList.add("fadeIn");
+            <h2>Épilogue</h2>
+
+            <p>
+
+            La suite du voyage sera bientôt écrite...
+
+            </p>
+
+        </div>
+
+        `;
+
+    }
 
 }
 
