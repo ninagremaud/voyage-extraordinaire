@@ -350,3 +350,42 @@ padding:18px;
 }
 
 }
+.fadeOut{
+
+animation:fadeOut .5s forwards;
+
+}
+
+.fadeIn{
+
+animation:fadeIn .8s forwards;
+
+}
+
+@keyframes fadeOut{
+
+from{
+opacity:1;
+transform:translateX(0);
+}
+
+to{
+opacity:0;
+transform:translateX(-40px);
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateX(40px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
