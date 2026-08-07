@@ -23,27 +23,17 @@ align-items:center;
 
 .book{
 
-background:#d9c7a3;
-
-max-width:700px;
-
-margin:auto;
+background:#d8c3a1;
 
 padding:70px;
 
-border-radius:4px;
+max-width:650px;
 
-box-shadow:
+margin:auto;
 
-0 0 40px rgba(0,0,0,.55),
+border:8px solid #6b4b2a;
 
-0 0 0 8px #5d4023,
-
-0 0 0 12px #9d7d50;
-
-text-align:center;
-
-position:relative;
+box-shadow:0 20px 40px rgba(0,0,0,.5);
 
 }
 
