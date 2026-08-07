@@ -47,7 +47,7 @@ Où le Voyageur doit-il se rendre ?
 
 reponse:"boulangerie",
 
-indice:"🥐 Direction la boulangerie !"
+indice:"Rends-toi au village, où la douce odeur odeurs des meilleurs croissants au chocolat de toute la comté guide les pas des plus valeureux"
 },
 
 {
@@ -118,7 +118,7 @@ ${chapitre.texte}
 
 <hr>
 
-<h3>🎥 Témoignages</h3>
+<h3> Message des guardiens </h3>
 
 `;
 
@@ -144,7 +144,7 @@ html+=`
 
 <hr>
 
-<h3>🧩 Énigme</h3>
+<h3>L'épreuve</h3>
 
 <p>
 
@@ -184,19 +184,27 @@ document.getElementById("resultat").innerHTML=
 
 <br>
 
-✅ ${chapitre.indice}
+document.getElementById("resultat").innerHTML=
 
-<br><br>
+`
+
+<hr>
+
+<h3>Le chemin se dévoile...</h3>
+
+<p>
+
+${chapitre.indice}
+
+</p>
 
 <button onclick="suivant()">
 
-Continuer
+Poursuivre le Voyage
 
 </button>
 
 `;
-
-}
 
 else{
 
