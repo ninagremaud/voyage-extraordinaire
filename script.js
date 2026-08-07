@@ -9,7 +9,7 @@ titre:"Chapitre I — Les Premiers Pas",
 
 texte:`
 
-<p>
+<p class="histoire">
 
 Toute aventure commence bien avant que le voyageur ne prenne la route.
 
