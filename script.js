@@ -5,174 +5,170 @@ const content = document.getElementById("content");
 const chapitres = [
 
 {
-titre:"Chapitre I — Les Premiers Pas",
+    titre: "Chapitre I — Les Premiers Pas",
 
-texte:`
+    texte: `
+    <p class="histoire">
+    Toute aventure commence bien avant que le voyageur ne prenne la route.
 
-<p class="histoire">
+    Avant les montagnes.
 
-Toute aventure commence bien avant que le voyageur ne prenne la route.
+    Avant les grands choix.
 
-Avant les montagnes.
+    Avant même qu'il ne comprenne que sa vie deviendrait une aventure.
 
-Avant les grands choix.
+    Il y eut un enfant.
 
-Avant même qu'il ne comprenne que sa vie deviendrait une aventure.
+    Curieux.
 
-Il y eut un enfant.
+    Rieur.
 
-Curieux.
+    Toujours prêt à explorer le monde.
+    </p>
+    `,
 
-Rieur.
+    videos: [
+        "Maman",
+        "Papa",
+        "Sœur"
+    ],
 
-Toujours prêt à explorer le monde.
+    enigme: `
+    Même les Hobbits savent qu'aucune aventure ne commence le ventre vide.
 
-</p>
+    Où le Voyageur doit-il se rendre ?
+    `,
 
-`,
+    reponse: "boulangerie",
 
-videos:[
-"Maman",
-"Papa",
-"Sœur"
-],
-
-enigme:`
-
-Même les Hobbits savent qu'aucune aventure ne commence le ventre vide.
-
-Où le Voyageur doit-il se rendre ?
-
-`,
-
-reponse:"boulangerie",
-
-indice:"Rends-toi au village, où la douce odeur odeurs des meilleurs croissants au chocolat de toute la comté guide les pas des plus valeureux"
+    indice: `
+    Rends-toi au village où l'odeur des meilleurs croissants guide les pas des voyageurs.
+    `
 },
 
 {
-titre:"Chapitre II",
+    titre: "Chapitre II — Reprendre des Forces",
 
-texte:`
+    texte: `
+    <p class="histoire">
+    Les routes ne sont pas toujours faciles.
 
-<p>
+    Chaque voyageur découvre un jour qu'il doit reprendre des forces avant de poursuivre.
+    </p>
+    `,
 
-Les routes ne sont pas toujours faciles.
+    videos: [
+        "Ami 1",
+        "Ami 2"
+    ],
 
-Chaque voyageur découvre un jour qu'il doit apprendre à reprendre des forces avant de poursuivre.
+    enigme: `
+    Les Elfes connaissent un lieu où les voyageurs retrouvent leur énergie.
 
-</p>
+    Quel est-il ?
+    `,
 
-`,
+    reponse: "massage",
 
-videos:[
-"Ami 1",
-"Ami 2"
-],
-
-enigme:`
-
-Les Elfes connaissent un lieu où les voyageurs retrouvent leur énergie.
-
-Quel est-il ?
-
-`,
-
-reponse:"massage",
-
-indice:"💆 Direction le massage."
+    indice: `
+    Il est temps de t'offrir un moment de repos.
+    `
 }
 
 ];
 
 let chapitreActuel = 0;
 
-document.getElementById("begin").onclick = function(){
+document.getElementById("begin").onclick = function () {
 
-cover.style.display="none";
-intro.classList.remove("hidden");
-
-};
-
-document.getElementById("next").onclick=function(){
-
-intro.style.display="none";
-
-afficherChapitre(0);
+    cover.style.display = "none";
+    intro.classList.remove("hidden");
 
 };
 
-function afficherChapitre(numero){
+document.getElementById("next").onclick = function () {
 
-chapitreActuel=numero;
+    intro.style.display = "none";
 
-let chapitre=chapitres[numero];
+    afficherChapitre(0);
 
-let html=`
+};
 
-<div class="page">
+function afficherChapitre(numero) {
 
-<h2>${chapitre.titre}</h2>
+    chapitreActuel = numero;
 
-${chapitre.texte}
+    const chapitre = chapitres[numero];
 
-<hr>
+    let html = `
 
-<h3> Message des guardiens </h3>
+    <div class="page">
 
-`;
+        <h2>${chapitre.titre}</h2>
 
-chapitre.videos.forEach(video=>{
+        ${chapitre.texte}
 
-html+=`
+        <hr>
 
-<div class="videoCard">
+        <h3>Les Gardiens de ce Chapitre</h3>
 
-🎥 ${video}
+    `;
 
-<br><br>
+    chapitre.videos.forEach(video => {
 
-<button>Voir la vidéo</button>
+        html += `
 
-</div>
+        <div class="videoCard">
 
-`;
+            <strong>${video}</strong>
 
-});
+            <br><br>
 
-html+=`
+            <button>
 
-<hr>
+                Voir le témoignage
 
-<h3>L'épreuve</h3>
+            </button>
 
-<p>
+        </div>
 
-${chapitre.enigme}
+        `;
 
-</p>
+    });
 
-<input id="reponse">
+    html += `
 
-<button onclick="verifier()">
+        <hr>
 
-Valider
+        <h3>L'Épreuve</h3>
 
-</button>
+        <p>${chapitre.enigme}</p>
 
-<p id="resultat"></p>
+        <input id="reponse" placeholder="Ta réponse">
 
-</div>
+        <br><br>
 
-`;
+        <button onclick="verifier()">
 
-content.innerHTML=html;
+            Valider
+
+        </button>
+
+        <div id="resultat"></div>
+
+    </div>
+
+    `;
+
+    content.innerHTML = html;
+
+}
 
 function verifier() {
 
-    let reponse = document.getElementById("reponse").value.toLowerCase().trim();
+    const reponse = document.getElementById("reponse").value.toLowerCase().trim();
 
-    let chapitre = chapitres[chapitreActuel];
+    const chapitre = chapitres[chapitreActuel];
 
     if (reponse === chapitre.reponse) {
 
@@ -186,7 +182,7 @@ function verifier() {
 
         <button onclick="suivant()">
 
-            Poursuivre le voyage
+            Continuer le voyage
 
         </button>
 
@@ -194,13 +190,11 @@ function verifier() {
 
     }
 
-}
-
-    else{
+    else {
 
         document.getElementById("resultat").innerHTML =
 
-        "❌ Ce n'est pas la bonne réponse.";
+        "<p>❌ Ce n'est pas la bonne réponse.</p>";
 
     }
 
@@ -224,63 +218,9 @@ function suivant() {
 
             <p>
 
-            La suite du voyage sera bientôt écrite...
+            Cette aventure n'est pas terminée.
 
-            </p>
-
-        </div>
-
-        `;
-
-    }
-
-}
-
-else{
-
-content.innerHTML=`
-
-<div class="page fadeIn">
-
-<h2>La Fin... ou le commencement ?</h2>
-
-<p>
-
-Aucune histoire ne s'achève vraiment.
-
-Certaines continuent simplement de s'écrire.
-
-</p>
-
-</div>
-
-`;
-
-}
-
-},500);
-
-}
-
-function suivant() {
-
-    if (chapitreActuel + 1 < chapitres.length) {
-
-        afficherChapitre(chapitreActuel + 1);
-
-    }
-
-    else {
-
-        content.innerHTML = `
-
-        <div class="page">
-
-            <h2>Épilogue</h2>
-
-            <p>
-
-            La suite du voyage sera bientôt écrite...
+            Les prochaines pages s'écriront tout au long de cette journée.
 
             </p>
 
