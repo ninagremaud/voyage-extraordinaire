@@ -126,9 +126,6 @@ const chapitres = [
 
         ],
 
-
-        // GALERIE
-
         galerie: [
             "bebe.jpeg",
             "bebe1.jpeg",
@@ -141,7 +138,6 @@ const chapitres = [
             "bebe8.jpeg",
             "bebe9.jpeg"
         ],
-
 
         enigme: `
         Même les plus courageux des Voyageurs savent
@@ -226,11 +222,6 @@ const chapitres = [
         </p>
         `,
 
-
-        // ==================================================
-        // COMPAGNONS
-        // ==================================================
-
         temoignages: [
 
             {
@@ -284,11 +275,6 @@ const chapitres = [
 
         ],
 
-
-        // ==================================================
-        // GALERIE
-        // ==================================================
-
         galerie: [
             "enfant1.jpeg",
             "enfant10.jpeg",
@@ -297,11 +283,6 @@ const chapitres = [
             "enfant6.jpeg",
             "enfant7.jpeg"
         ],
-
-
-        // ==================================================
-        // ENIGME
-        // ==================================================
 
         enigme: `
         Le Voyageur vient de reprendre la route.
@@ -325,11 +306,6 @@ const chapitres = [
         `,
 
         reponse: "port",
-
-
-        // ==================================================
-        // REVELATION
-        // ==================================================
 
         revelation: `
 
@@ -358,6 +334,177 @@ const chapitres = [
                 <strong>
                 🕐 Rendez-vous : 12h00
                 </strong>
+            </p>
+
+        </div>
+
+        `
+    },
+
+
+    // ==================================================
+    // CHAPITRE III — NOUVEAUX CHEMINS
+    // ==================================================
+
+    {
+        titre: "Chapitre III — Nouveaux Chemins",
+
+        texte: `
+        <p class="histoire">
+        Chaque voyage réserve des haltes inattendues.
+
+        Certaines sont faites pour avancer.
+
+        D'autres simplement pour reprendre son souffle,
+        laisser le monde ralentir quelques instants,
+        et profiter du chemin parcouru.
+
+        Car même les Voyageurs les plus déterminés
+        doivent parfois prendre le temps de se reposer.
+        </p>
+        `,
+
+
+        // ==================================================
+        // COMPAGNONS
+        // ==================================================
+
+        temoignages: [
+
+            {
+                nom: "Compagnon 1",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Christophe.mp4"
+            },
+
+            {
+                nom: "Compagnon 2",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Arnaud.mp4"
+            },
+
+            {
+                nom: "Compagnon 3",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Benhur.mp4"
+            },
+
+            {
+                nom: "Compagnon 4",
+                role: "Compagnon de route",
+
+                type: "videos",
+
+                media: [
+                    "Souvenirs/Fabio1.mp4",
+                    "Souvenirs/Fabio2.mp4"
+                ]
+            },
+
+            {
+                nom: "Compagnon 5",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Raph.mp4"
+            }
+
+        ],
+
+
+        // ==================================================
+        // GALERIE
+        // ==================================================
+
+        galerie: [
+            "Enfant.jpeg",
+            "Enfant11.jpeg",
+            "Enfant2.jpeg",
+            "Enfant8.jpeg",
+            "Enfant9.jpeg"
+        ],
+
+
+        // ==================================================
+        // ENIGME
+        // ==================================================
+
+        enigme: `
+        Après avoir partagé un repas avec tes Compagnons
+        de route, le voyage t'invite maintenant à ralentir.
+
+        Les Elfes connaissent depuis longtemps
+        les vertus d'une halte où l'on prend soin
+        du corps et où l'on oublie, pendant un instant,
+        le tumulte du monde.
+
+        <br><br>
+
+        Tu as rendez-vous à <strong>16h45</strong>.
+
+        <br><br>
+
+        Cherche le lieu où le Voyageur pourra
+        enfin déposer son sac, fermer les yeux
+        et se laisser porter.
+
+        <br><br>
+
+        <strong>
+        Où dois-tu te rendre ?
+        </strong>
+        `,
+
+        reponse: "cocooning",
+
+
+        // ==================================================
+        // REVELATION
+        // ==================================================
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                💆 PROCHAINE ÉTAPE — 16H45
+            </div>
+
+            <h3>
+                Une halte pour reprendre des forces
+            </h3>
+
+            <p>
+                Le prochain lieu de ton aventure
+                est un endroit où le Voyageur
+                peut enfin ralentir.
+            </p>
+
+            <p>
+                🌿 <strong>Au Cocooning</strong>
+                <br>
+                Bulle
+            </p>
+
+            <p>
+                <strong>
+                🕐 Rendez-vous : 16h45
+                </strong>
+            </p>
+
+            <p>
+                Le moment est venu de prendre soin
+                de toi et de profiter de cette pause.
             </p>
 
         </div>
@@ -425,13 +572,15 @@ function afficherChapitre(numero) {
 
         <hr>
 
-        <h3>Les Gardiens</h3>
+        <h3>
+            ${numero === 0 ? "Les Gardiens" : "Les Compagnons de route"}
+        </h3>
 
         <p>
-        Certains souvenirs ne peuvent être enfermés
-        dans les pages d'un livre.
-        Ils vivent encore dans la mémoire de ceux
-        qui ont marché à tes côtés.
+        ${numero === 0
+            ? "Certains souvenirs ne peuvent être enfermés dans les pages d'un livre. Ils vivent encore dans la mémoire de ceux qui ont marché à tes côtés."
+            : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
+        }
         </p>
 
         `;
@@ -657,6 +806,66 @@ function ouvrirSouvenir(index) {
 
                 <source
                     src="${souvenir.media}"
+                    type="video/mp4"
+                >
+
+                Ton navigateur ne peut pas lire cette vidéo.
+
+            </video>
+
+        </div>
+
+        `;
+
+    }
+
+
+    // ==================================================
+    // DEUX VIDEOS
+    // ==================================================
+
+    else if (souvenir.type === "videos") {
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <p>
+                Deux souvenirs attendent ici.
+            </p>
+
+            <video
+                class="souvenirVideo"
+                controls
+                playsinline
+            >
+
+                <source
+                    src="${souvenir.media[0]}"
+                    type="video/mp4"
+                >
+
+                Ton navigateur ne peut pas lire cette vidéo.
+
+            </video>
+
+
+            <video
+                class="souvenirVideo"
+                controls
+                playsinline
+            >
+
+                <source
+                    src="${souvenir.media[1]}"
                     type="video/mp4"
                 >
 
