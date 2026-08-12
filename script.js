@@ -569,3 +569,59 @@ function chapitreSuivant() {
     }
 
 }
+/* ======================================================
+   GALERIE DES PREMIERS SOUVENIRS
+   ====================================================== */
+
+.galerie-souvenirs{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:12px;
+
+    margin:30px 0;
+
+}
+
+
+.galerie-souvenirs img{
+
+    width:100%;
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+    border-radius:3px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+.galerie-souvenirs img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* Téléphone */
+
+@media (max-width:700px){
+
+    .galerie-souvenirs{
+
+        grid-template-columns:repeat(2, 1fr);
+
+        gap:10px;
+
+    }
+
+}
