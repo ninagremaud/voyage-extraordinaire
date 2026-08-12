@@ -215,38 +215,38 @@ const chapitres = [
         temoignages: [
 
             {
-                nom: "Compagnon 1",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "le cinéphile",
                 type: "audio",
                 media: "Souvenirs/Fx.mp3",
                 format: "audio/mpeg"
             },
 
             {
-                nom: "Compagnon 2",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "le grimpeur fou",
                 type: "audio",
                 media: "Souvenirs/CharlesAmi.mp3",
                 format: "audio/mpeg"
             },
 
             {
-                nom: "Compagnon 3",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "le cultivé",
                 type: "video",
                 media: "Souvenirs/Lucas.mp4"
             },
 
             {
                 nom: "Compagnon 4",
-                role: "Compagnon de route",
+                role: "le théoritien",
                 type: "video",
                 media: "Souvenirs/Robin.mp4"
             },
 
             {
-                nom: "Compagnon 5",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "le bien heureux",
                 type: "video",
                 media: "Souvenirs/Guillaume.mp4"
             }
