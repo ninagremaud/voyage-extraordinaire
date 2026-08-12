@@ -6,10 +6,14 @@ let chapitreActuel = 0;
 
 
 // ======================================================
-// CHAPITRE I — LES PREMIERS PAS
+// LES CHAPITRES
 // ======================================================
 
 const chapitres = [
+
+    // ==================================================
+    // CHAPITRE I — LES PREMIERS PAS
+    // ==================================================
 
     {
         titre: "Chapitre I — Les Premiers Pas",
@@ -33,11 +37,6 @@ const chapitres = [
         Toujours prêt à explorer le monde.
         </p>
         `,
-
-
-        // ==================================================
-        // SOUVENIRS
-        // ==================================================
 
         temoignages: [
 
@@ -116,7 +115,6 @@ const chapitres = [
                 `
             },
 
-
             {
                 nom: "Charles",
                 role: "Gardien des premiers pas",
@@ -129,9 +127,21 @@ const chapitres = [
         ],
 
 
-        // ==================================================
-        // ENIGME
-        // ==================================================
+        // GALERIE
+
+        galerie: [
+            "bebe.jpeg",
+            "bebe1.jpeg",
+            "bebe2.jpeg",
+            "bebe3.jpeg",
+            "bebe4.jpeg",
+            "bebe5.jpeg",
+            "bebe6.jpeg",
+            "bebe7.jpeg",
+            "bebe8.jpeg",
+            "bebe9.jpeg"
+        ],
+
 
         enigme: `
         Même les plus courageux des Voyageurs savent
@@ -155,11 +165,6 @@ const chapitres = [
         `,
 
         reponse: "croissant",
-
-
-        // ==================================================
-        // REVELATION
-        // ==================================================
 
         revelation: `
 
@@ -189,6 +194,169 @@ const chapitres = [
             <p>
                 <strong>
                 🕐 Heure : quand tu le souhaiteras ce matin.
+                </strong>
+            </p>
+
+        </div>
+
+        `
+    },
+
+
+    // ==================================================
+    // CHAPITRE II — LES COMPAGNONS DE ROUTE
+    // ==================================================
+
+    {
+        titre: "Chapitre II — Les Compagnons de Route",
+
+        texte: `
+        <p class="histoire">
+        Les routes deviennent différentes lorsque l'on
+        cesse de les parcourir seul.
+
+        Au fil du voyage apparaissent de nouveaux visages.
+
+        Certains restent quelques kilomètres.
+
+        D'autres partagent une saison entière.
+
+        Et parfois, sans même que l'on s'en rende compte,
+        certains deviennent de véritables compagnons de route.
+        </p>
+        `,
+
+
+        // ==================================================
+        // COMPAGNONS
+        // ==================================================
+
+        temoignages: [
+
+            {
+                nom: "Compagnon 1",
+                role: "Compagnon de route",
+
+                type: "audio",
+
+                media: "Souvenirs/Fx.aac",
+
+                format: "audio/aac"
+            },
+
+            {
+                nom: "Compagnon 2",
+                role: "Compagnon de route",
+
+                type: "audio",
+
+                media: "Souvenirs/CharlesAmi.ogg",
+
+                format: "audio/ogg"
+            },
+
+            {
+                nom: "Compagnon 3",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Lucas.mp4"
+            },
+
+            {
+                nom: "Compagnon 4",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Robin.mp4"
+            },
+
+            {
+                nom: "Compagnon 5",
+                role: "Compagnon de route",
+
+                type: "video",
+
+                media: "Souvenirs/Guillaume.mp4"
+            }
+
+        ],
+
+
+        // ==================================================
+        // GALERIE
+        // ==================================================
+
+        galerie: [
+            "enfant1.jpeg",
+            "enfant10.jpeg",
+            "enfant4.jpeg",
+            "enfant5.jpeg",
+            "enfant6.jpeg",
+            "enfant7.jpeg"
+        ],
+
+
+        // ==================================================
+        // ENIGME
+        // ==================================================
+
+        enigme: `
+        Le Voyageur vient de reprendre la route.
+
+        Mais il ne restera pas longtemps seul.
+
+        Le prochain rendez-vous se trouve dans une ville
+        où l'on peut entendre l'eau accompagner les pas
+        de ceux qui traversent ses rues.
+
+        <br><br>
+
+        Cherche un lieu dont le nom évoque naturellement
+        les voyages, les départs et les arrivées.
+
+        <br><br>
+
+        <strong>
+        Où dois-tu te rendre ?
+        </strong>
+        `,
+
+        reponse: "port",
+
+
+        // ==================================================
+        // REVELATION
+        // ==================================================
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                🍽️ PROCHAINE ÉTAPE — 12H00
+            </div>
+
+            <h3>
+                Le repas des Voyageurs
+            </h3>
+
+            <p>
+                Le Livre t'indique maintenant
+                la prochaine destination.
+            </p>
+
+            <p>
+                ⚓ <strong>Le Port</strong>
+                <br>
+                Fribourg
+            </p>
+
+            <p>
+                <strong>
+                🕐 Rendez-vous : 12h00
                 </strong>
             </p>
 
@@ -227,7 +395,7 @@ document.getElementById("next").onclick = function () {
 
 
 // ======================================================
-// AFFICHER LE CHAPITRE
+// AFFICHER UN CHAPITRE
 // ======================================================
 
 function afficherChapitre(numero) {
@@ -303,42 +471,57 @@ function afficherChapitre(numero) {
 
 
     // ==================================================
-    // GALERIE DES PREMIERS SOUVENIRS
+    // GALERIE
     // ==================================================
 
-    html += `
+    if (chapitre.galerie && chapitre.galerie.length > 0) {
 
-    <hr>
+        html += `
 
-    <h3>
-        Les premiers souvenirs
-    </h3>
+        <hr>
 
-    <p>
-        Avant les grandes aventures,
-        il y eut tous ces petits instants.
-    </p>
+        <h3>
+            ${
+                numero === 0
+                ? "Les premiers souvenirs"
+                : "Quelques souvenirs"
+            }
+        </h3>
 
-    <div class="galerie-souvenirs">
+        <p>
+            Certaines images racontent des histoires
+            qu'aucun mot ne saurait remplacer.
+        </p>
 
-        <img src="Souvenirs/bebe.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe1.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe2.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe3.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe4.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe5.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe6.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe7.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe8.jpeg" alt="Souvenir d'enfance">
-        <img src="Souvenirs/bebe9.jpeg" alt="Souvenir d'enfance">
+        <div class="galerie-souvenirs">
+        `;
 
-    </div>
 
-    `;
+        chapitre.galerie.forEach(photo => {
+
+            html += `
+
+            <img
+                src="Souvenirs/${photo}"
+                alt="Souvenir"
+            >
+
+            `;
+
+        });
+
+
+        html += `
+
+        </div>
+
+        `;
+
+    }
 
 
     // ==================================================
-    // ZONE SOUVENIR
+    // ZONE DES SOUVENIRS
     // ==================================================
 
     html += `
@@ -412,7 +595,7 @@ function ouvrirSouvenir(index) {
 
 
     // ==================================================
-    // PHOTO + TEXTE DE LUCIENNE
+    // PHOTO + TEXTE
     // ==================================================
 
     if (souvenir.type === "photoTexte") {
@@ -449,7 +632,7 @@ function ouvrirSouvenir(index) {
 
 
     // ==================================================
-    // VIDEO DE CHARLES
+    // VIDEO
     // ==================================================
 
     else if (souvenir.type === "video") {
@@ -480,6 +663,49 @@ function ouvrirSouvenir(index) {
                 Ton navigateur ne peut pas lire cette vidéo.
 
             </video>
+
+        </div>
+
+        `;
+
+    }
+
+
+    // ==================================================
+    // AUDIO
+    // ==================================================
+
+    else if (souvenir.type === "audio") {
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <p>
+                Prends le temps d'écouter ce souvenir.
+            </p>
+
+            <audio
+                class="souvenirAudio"
+                controls
+            >
+
+                <source
+                    src="${souvenir.media}"
+                    type="${souvenir.format}"
+                >
+
+                Ton navigateur ne peut pas lire cet audio.
+
+            </audio>
 
         </div>
 
@@ -524,7 +750,29 @@ function verifier() {
         .replace(/[\u0300-\u036f]/g, "");
 
 
+    // ==================================================
+    // BONNE REPONSE
+    // ==================================================
+
     if (reponse === bonneReponse) {
+
+        let boutonSuivant = "";
+
+
+        if (chapitreActuel + 1 < chapitres.length) {
+
+            boutonSuivant = `
+
+            <button onclick="chapitreSuivant()">
+
+                Accéder au chapitre suivant
+
+            </button>
+
+            `;
+
+        }
+
 
         document.getElementById("resultat").innerHTML = `
 
@@ -558,11 +806,7 @@ function verifier() {
                     </strong>
                 </p>
 
-                <button onclick="chapitreSuivant()">
-
-                    Accéder au chapitre suivant
-
-                </button>
+                ${boutonSuivant}
 
             </div>
 
@@ -572,6 +816,10 @@ function verifier() {
 
     }
 
+
+    // ==================================================
+    // MAUVAISE REPONSE
+    // ==================================================
 
     else {
 
