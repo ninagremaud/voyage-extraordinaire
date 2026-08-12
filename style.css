@@ -391,3 +391,30 @@ transform:translateX(0);
 }
 
 }
+.transition-livre{
+
+    text-align:center;
+
+    margin-top:45px;
+
+    padding-top:10px;
+
+}
+
+.transition-livre h3{
+
+    margin-top:25px;
+
+}
+
+.transition-livre p{
+
+    font-size:18px;
+
+}
+
+.transition-livre button{
+
+    margin-top:20px;
+
+}
