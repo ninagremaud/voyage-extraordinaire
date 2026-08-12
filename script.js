@@ -850,7 +850,6 @@ const chapitres = [
 
         ],
 
-
         enigme: `
         Le soleil commence doucement à descendre.
 
@@ -909,6 +908,129 @@ const chapitres = [
                 🕐 Rendez-vous : 19h30
                 </strong>
             </p>
+
+        </div>
+        `
+    },
+
+
+    // ==================================================
+    // CHAPITRE VI — POUR LA SUITE DE TON AVENTURE
+    // ==================================================
+
+    {
+        titre: "Chapitre VI — Pour la suite de ton aventure",
+
+        texte: `
+        <p class="histoire">
+
+        Pour t'accompagner dans la suite de tes aventures,
+        ceux qui veillent sur toi t'ont laissé un dernier message.
+
+        </p>
+        `,
+
+        temoignages: [
+
+            {
+                nom: "Ceux qui veillent sur toi",
+                role: "Pour la suite de ton aventure",
+
+                type: "souvenirFinal",
+
+                photo: "Souvenirs/Boubker.jpeg",
+
+                audios: [
+                    "Souvenirs/BoubkerVoeux.mp3",
+                    "Souvenirs/CharlesVoeux.mp3"
+                ],
+
+                videos: [
+                    "Souvenirs/ArnaudVoeux.mp4",
+                    "Souvenirs/LucasVoeux.mp4",
+                    "Souvenirs/ChristopheVoeux.mp4",
+                    "Souvenirs/GuillaumeVoeux.mp4",
+                    "Souvenirs/RaphVoeux.mp4",
+                    "Souvenirs/StephVoeux.mp4",
+                    "Souvenirs/LiliVoeux.mp4",
+                    "Souvenirs/TitiVoeux.mp4",
+                    "Souvenirs/VeroVoeux.mp4"
+                ]
+            }
+
+        ],
+
+        enigme: `
+        Le jour touche doucement à sa fin.
+
+        Tu as parcouru une bonne partie du chemin,
+        rencontré ceux qui ont compté dans ton histoire,
+        retrouvé des souvenirs et partagé de nouvelles étapes.
+
+        <br><br>
+
+        Mais aucune aventure digne de ce nom
+        ne se termine le ventre vide…
+
+        <br><br>
+
+        Il reste une dernière halte à découvrir.
+
+        <br><br>
+
+        Elle se déguste généralement avec une pâte,
+        quelques ingrédients choisis avec soin,
+        et beaucoup de gourmandise.
+
+        <br><br>
+
+        <strong>
+        Quelle sera la dernière étape de cette journée ?
+        </strong>
+        `,
+
+        reponse: "pizza",
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                🍕 DERNIÈRE ÉTAPE — 20H30
+            </div>
+
+            <h3>
+                Le dernier repas du Voyageur
+            </h3>
+
+            <p>
+                Après toutes ces aventures,
+                il est temps de terminer cette journée
+                autour d'une bonne pizza.
+            </p>
+
+            <p>
+                🍕 <strong>Ton bon pour une pizza</strong>
+            </p>
+
+            <p>
+                <strong>
+                🕐 Rendez-vous : 20h30
+                </strong>
+            </p>
+
+            <div class="bon-pizzeria">
+
+                <p>
+                    🎟️ <strong>BON POUR UNE PIZZA</strong>
+                </p>
+
+                <p>
+                    Valable pour une dernière étape
+                    gourmande de cette journée.
+                </p>
+
+            </div>
 
         </div>
         `
@@ -982,7 +1104,9 @@ function afficherChapitre(numero) {
                     ? "Les Gardiennes du chemin"
                     : numero === 4
                         ? "Les Gardiennes"
-                        : "Les Compagnons de route"
+                        : numero === 5
+                            ? "Ceux qui veillent sur toi"
+                            : "Les Compagnons de route"
             }
         </h3>
 
@@ -997,7 +1121,10 @@ function afficherChapitre(numero) {
                 : numero === 4
                     ? "Certaines personnes connaissent le Voyageur depuis longtemps. Elles ont vu grandir son histoire, accompagné ses chemins et gardé précieusement une place pour lui dans leur cœur."
 
-                    : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
+                    : numero === 5
+                        ? "Pour t'accompagner dans la suite de tes aventures, ceux qui veillent sur toi t'ont laissé un dernier message."
+
+                        : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
         }
         </p>
 
@@ -1291,6 +1418,129 @@ function ouvrirSouvenir(index) {
                 Ton navigateur ne peut pas lire cet audio.
 
             </audio>
+
+        </div>
+
+        `;
+
+    }
+
+
+    // ==================================================
+    // SOUVENIR FINAL — PHOTO + AUDIOS + VIDEOS
+    // ==================================================
+
+    else if (souvenir.type === "souvenirFinal") {
+
+        let audiosHTML = "";
+        let videosHTML = "";
+
+
+        souvenir.audios.forEach((audio, index) => {
+
+            audiosHTML += `
+
+            <div class="souvenirMediaItem">
+
+                <p>
+                    <strong>
+                        ${
+                            index === 0
+                            ? "Un premier message"
+                            : "Un dernier message"
+                        }
+                    </strong>
+                </p>
+
+                <audio
+                    class="souvenirAudio"
+                    controls
+                >
+
+                    <source
+                        src="${audio}"
+                        type="audio/mpeg"
+                    >
+
+                    Ton navigateur ne peut pas lire cet audio.
+
+                </audio>
+
+            </div>
+
+            `;
+
+        });
+
+
+        souvenir.videos.forEach((video, index) => {
+
+            videosHTML += `
+
+            <div class="souvenirMediaItem">
+
+                <p>
+                    <strong>
+                        Message vidéo ${index + 1}
+                    </strong>
+                </p>
+
+                <video
+                    class="souvenirVideo"
+                    controls
+                    playsinline
+                >
+
+                    <source
+                        src="${video}"
+                        type="video/mp4"
+                    >
+
+                    Ton navigateur ne peut pas lire cette vidéo.
+
+                </video>
+
+            </div>
+
+            `;
+
+        });
+
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <img
+                src="${souvenir.photo}"
+                alt="Souvenir"
+                class="souvenirImage"
+            >
+
+            <p>
+                Prends le temps de découvrir
+                les messages qui t'ont été laissés.
+            </p>
+
+            <div class="souvenirAudios">
+
+                ${audiosHTML}
+
+            </div>
+
+            <div class="souvenirVideos">
+
+                ${videosHTML}
+
+            </div>
 
         </div>
 
