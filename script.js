@@ -4,14 +4,10 @@ const content = document.getElementById("content");
 
 
 // ======================================================
-// LES 7 CHAPITRES DU LIVRE
+// CHAPITRE I — PREMIERS PAS
 // ======================================================
 
 const chapitres = [
-
-    // ==================================================
-    // CHAPITRE I
-    // ==================================================
 
     {
         titre: "Chapitre I — Les Premiers Pas",
@@ -39,24 +35,100 @@ const chapitres = [
         temoignages: [
 
             {
-                nom: "Grand-papa",
-                role: "Gardien des premiers jours",
-                media: ""
+                nom: "Lucienne",
+
+                role: "Gardien des premiers pas",
+
+                type: "lucienne",
+
+                photo: "https://drive.google.com/uc?export=view&id=15pWYK2EV4XlHrDPsEVUULRl8coGI_z8u",
+
+                texte: `
+                <p>
+                <strong>Cher Eloi,</strong>
+                </p>
+
+                <p>
+                Juste un petit mot de Tata …
+                </p>
+
+                <p>
+                30 ans, c’est comme une page blanche… sauf qu’elle commence avec plein de belles couleurs déjà passées :
+                </p>
+
+                <ul>
+                    <li>le vert pour les années passées à la ferme</li>
+                    <li>le rose pour les fleurs de maman et les câlins de ta sœur</li>
+                    <li>le rouge pour la période de l’adolescence</li>
+                    <li>le bleu pour toutes tes envies de rêve</li>
+                </ul>
+
+                <p>
+                et j’en passe.
+                </p>
+
+                <p>
+                On oubliera les couleurs sombres.
+                </p>
+
+                <p>
+                30 ans, on n’a plus besoin de plaire à tout le monde.
+                On cherche surtout à être en accord avec soi.
+                Et toi tu y arrives si bien.
+                </p>
+
+                <p>
+                Je te souhaite une décennie de choix assumés,
+                de projets magiques peut-être à deux.
+                Tu vas briller. Bravo !
+                </p>
+
+                <p>
+                Tout petit déjà ton caractère de grand-papa Elie
+                et surtout ton sourire faisaient tomber tout le monde.
+                </p>
+
+                <p>
+                Reste comme tu es et continue à propager
+                cette bonne humeur autour de toi.
+                </p>
+
+                <p>
+                Gros bisous je t’aime très fort.
+                </p>
+
+                <p>
+                <strong>Tata</strong>
+                </p>
+
+                <p>
+                <em>
+                PS : une bouteille de champagne t’attend avec Nina
+                quand tu seras libre
+                </em>
+                </p>
+                `
             },
 
-            {
-                nom: "Lucienne",
-                role: "Gardienne des premiers souvenirs",
-                media: ""
-            },
 
             {
                 nom: "Charles",
-                role: "Gardien des premières aventures",
-                media: ""
+
+                role: "Gardien des premiers pas",
+
+                type: "lien",
+
+                media: "https://drive.google.com/file/d/1TRV-BZ1WVWQVEfG3kVGJ2L6nYxUMt-Cz/view?usp=sharing",
+
+                texte: ""
             }
 
         ],
+
+
+        // ==================================================
+        // ENIGME
+        // ==================================================
 
         enigme: `
         Même les plus courageux des Voyageurs savent
@@ -80,6 +152,11 @@ const chapitres = [
         `,
 
         reponse: "croissant",
+
+
+        // ==================================================
+        // REVELATION
+        // ==================================================
 
         revelation: `
 
@@ -114,555 +191,7 @@ const chapitres = [
 
         </div>
 
-        `,
-
-        motSuivant: "ENFANCE"
-    },
-
-
-    // ==================================================
-    // CHAPITRE II
-    // ==================================================
-
-    {
-        titre: "Chapitre II — Les Sentiers de l'Enfance",
-
-        texte: `
-        <p class="histoire">
-        Les chemins que l'on parcourt enfant semblent parfois
-        les plus petits.
-
-        Pourtant, ce sont souvent eux qui nous mènent le plus loin.
-
-        Lorsque le Voyageur apprit enfin à marcher,
-        le monde grandit avec lui.
-
-        Chaque sentier devenait une aventure.
-
-        Chaque forêt cachait un royaume.
-
-        Chaque journée semblait pouvoir durer éternellement.
-        </p>
-        `,
-
-        temoignages: [
-
-            {
-                nom: "Ami 1",
-                role: "Compagnon des premières grandes aventures",
-                media: ""
-            }
-
-        ],
-
-        enigme: `
-        Les routes deviennent parfois longues.
-
-        Et lorsque le corps réclame une pause,
-        même les plus grands Voyageurs savent
-        qu'il faut savoir s'arrêter.
-
-        Cherche un endroit où l'on ne vient ni pour courir,
-
-        ni pour combattre,
-
-        mais pour se laisser entièrement prendre en charge.
-
-        <br><br>
-
-        <strong>
-        Quelle est la prochaine étape ?
-        </strong>
-        `,
-
-        reponse: "massage",
-
-        revelation: `
-
-        <div class="destination">
-
-            <div class="heure">
-                💆 PROCHAINE ÉTAPE — 16H45
-            </div>
-
-            <h3>
-                Une halte pour le Voyageur
-            </h3>
-
-            <p>
-                Après tant de routes parcourues,
-                même les plus grands aventuriers doivent
-                parfois s'accorder un moment de repos.
-            </p>
-
-            <p>
-                💆 <strong>Au Cocooning Institut</strong>
-                <br>
-                Place des Alpes 26
-                <br>
-                1630 Bulle
-            </p>
-
-            <p>
-                <strong>
-                🕐 Rendez-vous : 16h45
-                </strong>
-            </p>
-
-        </div>
-
-        `,
-
-        motSuivant: "COMPAGNONS"
-    },
-
-
-    // ==================================================
-    // CHAPITRE III
-    // ==================================================
-
-    {
-        titre: "Chapitre III — Les Grandes Routes",
-
-        texte: `
-        <p class="histoire">
-        Il arrive un moment où les chemins tracés
-        par les autres ne suffisent plus.
-
-        Le Voyageur doit alors choisir lesquels emprunter.
-
-        Certains détours deviennent des découvertes.
-
-        Certaines erreurs deviennent des enseignements.
-
-        Et certaines rencontres changent pour toujours
-        la direction du voyage.
-        </p>
-        `,
-
-        temoignages: [
-
-            {
-                nom: "Ami 2",
-                role: "Compagnon de route",
-                media: ""
-            }
-
-        ],
-
-        enigme: `
-        Une nouvelle épreuve t'attend.
-
-        Cette fois, il faudra retrouver un lieu où
-        deux Voyageurs peuvent s'affronter,
-
-        courir,
-
-        viser,
-
-        et surtout essayer de ne pas envoyer la balle
-        dans les contrées lointaines.
-
-        <br><br>
-
-        <strong>
-        Où dois-tu te rendre ?
-        </strong>
-        `,
-
-        reponse: "padel",
-
-        revelation: `
-
-        <div class="destination">
-
-            <div class="heure">
-                🎾 PROCHAINE ÉTAPE — 18H00
-            </div>
-
-            <h3>
-                L'épreuve des compagnons
-            </h3>
-
-            <p>
-                Une nouvelle épreuve t'attend.
-            </p>
-
-            <p>
-                🎾 <strong>Padel</strong>
-            </p>
-
-            <p>
-                <strong>
-                🕐 Rendez-vous : 18h00
-                </strong>
-                <br>
-                Devant les terrains de tennis à Bulle.
-            </p>
-
-        </div>
-
-        `,
-
-        motSuivant: "COMPAGNIE"
-    },
-
-
-    // ==================================================
-    // CHAPITRE IV
-    // ==================================================
-
-    {
-        titre: "Chapitre IV — La Compagnie",
-
-        texte: `
-        <p class="histoire">
-        Aucun Voyageur ne traverse le monde entièrement seul.
-
-        Au fil des années, de nouveaux visages apparurent
-        sur son chemin.
-
-        Certains ne firent qu'un bout de route.
-
-        D'autres choisirent d'y rester.
-
-        Ils devinrent sa Compagnie.
-
-        Et le Voyageur découvrit alors que les plus grandes
-        richesses ne se trouvent pas dans les coffres,
-
-        mais dans les personnes avec lesquelles
-        on choisit de partager la route.
-        </p>
-        `,
-
-        temoignages: [
-
-            {
-                nom: "Les sœurs",
-                role: "Compagnes de route depuis toujours",
-                media: ""
-            }
-
-        ],
-
-        enigme: `
-        Les Voyageurs savent qu'après les grandes épreuves,
-
-        vient parfois le moment de s'asseoir,
-
-        de lever son verre,
-
-        et de profiter simplement de la compagnie
-        de ceux qui nous entourent.
-
-        <br><br>
-
-        Le Livre parle d'un jardin caché.
-
-        <br><br>
-
-        <strong>
-        Que t'annonce-t-il ?
-        </strong>
-        `,
-
-        reponse: "verre",
-
-        revelation: `
-
-        <div class="destination">
-
-            <div class="heure">
-                🌿 PROCHAINE ÉTAPE — 19H30
-            </div>
-
-            <h3>
-                Le jardin des compagnons
-            </h3>
-
-            <p>
-                Après l'effort vient le temps
-                de lever son verre.
-            </p>
-
-            <p>
-                🌿 <strong>Côté Jardin</strong>
-                <br>
-                Rue de la Sionge 4
-                <br>
-                1630 Bulle
-            </p>
-
-            <p>
-                <strong>
-                🕐 Rendez-vous : 19h30
-                </strong>
-            </p>
-
-        </div>
-
-        `,
-
-        motSuivant: "EPREUVE"
-    },
-
-
-    // ==================================================
-    // CHAPITRE V
-    // ==================================================
-
-    {
-        titre: "Chapitre V — Les Épreuves",
-
-        texte: `
-        <p class="histoire">
-        Aucun voyage ne se déroule exactement comme prévu.
-
-        Les cartes sont parfois incomplètes.
-
-        Les détours plus nombreux que prévu.
-
-        Les tempêtes arrivent sans prévenir.
-
-        Mais ce sont souvent ces chemins-là qui révèlent
-        ce que le Voyageur porte réellement en lui.
-        </p>
-        `,
-
-        temoignages: [
-
-            {
-                nom: "Marion",
-                role: "Gardienne du cœur",
-                media: ""
-            },
-
-            {
-                nom: "Maman",
-                role: "Gardienne des premiers chapitres",
-                media: ""
-            },
-
-            {
-                nom: "Cathi",
-                role: "Gardienne de la route",
-                media: ""
-            }
-
-        ],
-
-        enigme: `
-        Le Voyageur a traversé suffisamment d'épreuves
-        pour mériter une dernière récompense.
-
-        Une récompense simple.
-
-        Ronde.
-
-        Chaude.
-
-        Et que l'on partage généralement autour d'une table.
-
-        <br><br>
-
-        <strong>
-        Quelle sera la prochaine étape ?
-        </strong>
-        `,
-
-        reponse: "pizza",
-
-        revelation: `
-
-        <div class="destination">
-
-            <div class="heure">
-                🍕 DERNIÈRE ÉTAPE — 20H30
-            </div>
-
-            <h3>
-                Le dernier banquet
-            </h3>
-
-            <p>
-                Le Voyageur a traversé les routes,
-                les épreuves et les détours.
-            </p>
-
-            <p>
-                Il est maintenant temps de partager
-                un dernier repas.
-            </p>
-
-            <p>
-                🍕 <strong>
-                Un bon pour la pizzeria t'attend.
-                </strong>
-            </p>
-
-            <p>
-                <strong>
-                🕐 À partir de 20h30
-                </strong>
-            </p>
-
-        </div>
-
-        `,
-
-        motSuivant: "REGARD"
-    },
-
-
-    // ==================================================
-    // CHAPITRE VI
-    // ==================================================
-
-    {
-        titre: "Chapitre VI — Le Regard des Gardiens",
-
-        texte: `
-        <p class="histoire">
-        Aucun Voyageur ne peut voir son propre chemin
-        dans son ensemble.
-
-        Pour cela, il lui faut parfois emprunter
-        le regard de ceux qui l'aiment.
-
-        Car nous avançons souvent sans mesurer
-        ce que notre présence change dans la vie des autres.
-
-        Un mot.
-
-        Un rire.
-
-        Une main tendue.
-
-        Autant de petites choses qui peuvent devenir
-        immenses pour celui qui les reçoit.
-        </p>
-        `,
-
-        temoignages: [
-
-            {
-                nom: "Les Gardiens",
-                role: "Pour la suite de ton aventure...",
-                media: ""
-            }
-
-        ],
-
-        enigme: `
-        Il reste une dernière page.
-
-        Mais celle-ci ne peut être ouverte
-        par un simple mot de passage.
-
-        Le Livre sait qu'elle appartient à quelqu'un
-        qui marche depuis maintenant un certain temps
-        aux côtés du Voyageur.
-
-        <br><br>
-
-        <strong>
-        Qui doit écrire la prochaine page ?
-        </strong>
-        `,
-
-        reponse: "moi",
-
-        revelation: `
-
-        <div class="destination">
-
-            <h3>
-                Le Livre se tait.
-            </h3>
-
-            <p>
-                Certaines pages ne peuvent être écrites
-                par les anciens livres.
-            </p>
-
-            <p>
-                Elles appartiennent à ceux qui connaissent
-                le cœur du Voyageur mieux que personne.
-            </p>
-
-            <p>
-                Les prochaines lignes ne sont plus les miennes.
-            </p>
-
-            <p>
-                <strong>
-                Je te les confie.
-                </strong>
-            </p>
-
-        </div>
-
-        `,
-
-        motSuivant: "TRIENTIEME"
-    },
-
-
-    // ==================================================
-    // CHAPITRE VII
-    // ==================================================
-
-    {
-        titre: "Chapitre VII — Le Trentième Été",
-
-        texte: `
-        <p class="histoire">
-        Il arrive parfois que deux Voyageurs empruntent
-        des chemins différents sans savoir qu'ils avancent
-        vers la même destination.
-
-        Puis leurs routes se croisent.
-
-        Et le voyage ne devient pas plus facile.
-
-        Il devient simplement plus beau.
-
-        Car certains compagnons finissent par devenir
-        le foyer vers lequel on revient,
-
-        quelle que soit la longueur du voyage.
-        </p>
-        `,
-
-        temoignages: [],
-
-        enigme: "",
-
-        reponse: "",
-
-        revelation: `
-
-        <div class="destination">
-
-            <h3>
-                Les dernières pages
-            </h3>
-
-            <p>
-                Le Livre a raconté le voyage jusqu'ici.
-            </p>
-
-            <p>
-                Il est maintenant temps de laisser
-                une autre voix parler.
-            </p>
-
-        </div>
-
-        `,
-
-        motSuivant: ""
+        `
     }
 
 ];
@@ -725,12 +254,11 @@ function afficherChapitre(numero) {
 
         <hr>
 
-        <h3>Les Chroniqueurs</h3>
+        <h3>Les Gardiens</h3>
 
         <p>
         Certains souvenirs ne peuvent être enfermés
         dans les pages d'un livre.
-
         Ils vivent encore dans la mémoire de ceux
         qui ont marché à tes côtés.
         </p>
@@ -738,7 +266,7 @@ function afficherChapitre(numero) {
         `;
 
 
-        chapitre.temoignages.forEach(personne => {
+        chapitre.temoignages.forEach((personne, index) => {
 
             html += `
 
@@ -756,36 +284,24 @@ function afficherChapitre(numero) {
 
                 <br><br>
 
-                ${
-                    personne.media
-
-                    ?
-
-                    `
-                    <a
-                        href="${personne.media}"
-                        target="_blank"
-                    >
-                        <button>
-                            Ouvrir le souvenir
-                        </button>
-                    </a>
-                    `
-
-                    :
-
-                    `
-                    <button disabled>
-                        Souvenir à venir
-                    </button>
-                    `
-                }
+                <button
+                    onclick="ouvrirSouvenir(${index})"
+                >
+                    Accéder au souvenir
+                </button>
 
             </div>
 
             `;
 
         });
+
+
+        html += `
+
+        <div id="souvenir"></div>
+
+        `;
 
     }
 
@@ -841,7 +357,85 @@ function afficherChapitre(numero) {
 
 
 // ======================================================
-// VERIFIER UNE ENIGME
+// OUVRIR UN SOUVENIR
+// ======================================================
+
+function ouvrirSouvenir(index) {
+
+    const chapitre = chapitres[chapitreActuel];
+
+    const souvenir = chapitre.temoignages[index];
+
+    const zone = document.getElementById("souvenir");
+
+
+    // --------------------------------------------------
+    // SOUVENIR DE LUCIENNE
+    // --------------------------------------------------
+
+    if (souvenir.type === "lucienne") {
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <img
+                src="${souvenir.photo}"
+                alt="Souvenir de Lucienne"
+                style="
+                    width:100%;
+                    max-width:500px;
+                    display:block;
+                    margin:25px auto;
+                    border-radius:3px;
+                    box-shadow:0 8px 25px rgba(0,0,0,.25);
+                "
+            >
+
+            <div class="souvenirText">
+
+                ${souvenir.texte}
+
+            </div>
+
+        </div>
+
+        `;
+
+        zone.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+
+    // --------------------------------------------------
+    // SOUVENIR AVEC LIEN
+    // --------------------------------------------------
+
+    else if (souvenir.type === "lien") {
+
+        window.open(
+            souvenir.media,
+            "_blank"
+        );
+
+    }
+
+}
+
+
+// ======================================================
+// VERIFIER L'ENIGME
 // ======================================================
 
 function verifier() {
@@ -873,27 +467,6 @@ function verifier() {
     // ==================================================
 
     if (reponse === bonneReponse) {
-
-        let boutonSuivant = "";
-
-
-        // S'il existe un chapitre suivant,
-        // on affiche le bouton.
-
-        if (chapitreActuel + 1 < chapitres.length) {
-
-            boutonSuivant = `
-
-            <button onclick="chapitreSuivant()">
-
-                Accéder au chapitre suivant
-
-            </button>
-
-            `;
-
-        }
-
 
         document.getElementById("resultat").innerHTML = `
 
@@ -927,7 +500,11 @@ function verifier() {
                     </strong>
                 </p>
 
-                ${boutonSuivant}
+                <button onclick="chapitreSuivant()">
+
+                    Accéder au chapitre suivant
+
+                </button>
 
             </div>
 
@@ -967,22 +544,16 @@ function verifier() {
 
 function chapitreSuivant() {
 
-    if (chapitreActuel + 1 < chapitres.length) {
+    /*
+    Pour le moment, nous n'avons volontairement
+    qu'un seul chapitre dans ce test.
 
-        afficherChapitre(chapitreActuel + 1);
+    Les autres chapitres seront réintégrés
+    lorsque leurs souvenirs seront prêts.
+    */
 
-
-        // Retour en haut de la page
-        // particulièrement utile sur téléphone.
-
-        window.scrollTo({
-
-            top: 0,
-
-            behavior: "smooth"
-
-        });
-
-    }
+    alert(
+        "Le prochain chapitre sera ajouté lorsque les souvenirs seront prêts."
+    );
 
 }
