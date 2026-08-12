@@ -37,7 +37,7 @@ const chapitres = [
         temoignages: [
 
             {
-                nom: "Lucienne",
+                nom: "",
                 role: "Gardien des premiers pas",
 
                 type: "photoTexte",
@@ -113,7 +113,7 @@ const chapitres = [
 
 
             {
-                nom: "Charles",
+                nom: "",
                 role: "Gardien des premiers pas",
 
                 type: "video",
