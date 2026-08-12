@@ -401,3 +401,36 @@ transform:translateX(0);
     margin-top:20px;
 
 }
+.souvenirPage{
+
+    margin-top:25px;
+
+}
+
+.souvenirPage img{
+
+    height:auto;
+
+}
+
+.souvenirText{
+
+    text-align:left;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.souvenirText ul{
+
+    padding-left:25px;
+
+}
+
+.souvenirText li{
+
+    margin-bottom:8px;
+
+}
