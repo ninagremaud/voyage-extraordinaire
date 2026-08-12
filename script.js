@@ -41,7 +41,7 @@ const chapitres = [
 
                 type: "lucienne",
 
-                photo: "https://drive.google.com/uc?export=view&id=15pWYK2EV4XlHrDPsEVUULRl8coGI_z8u",
+               photo: "Souvenirs/Lucienne.jpeg",
 
                 texte: `
                 <p>
