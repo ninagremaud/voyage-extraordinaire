@@ -9,498 +9,661 @@ const content = document.getElementById("content");
 
 const chapitres = [
 
-{
-    titre: "Chapitre I",
+    // ==================================================
+    // CHAPITRE I
+    // ==================================================
 
-    texte: `
-    <p class="histoire">
-    Toute aventure commence bien avant que le voyageur ne prenne la route.
+    {
+        titre: "Chapitre I — Les Premiers Pas",
 
-    Avant les montagnes.
+        texte: `
+        <p class="histoire">
+        Toute aventure commence bien avant que le Voyageur ne prenne la route.
 
-    Avant les grands choix.
+        Avant les montagnes.
 
-    Avant même qu'il ne comprenne que sa vie deviendrait une aventure.
+        Avant les grands choix.
 
-    Il y eut un enfant.
+        Avant même qu'il ne comprenne que sa vie deviendrait une aventure.
 
-    Curieux.
+        Il y eut un enfant.
 
-    Rieur.
+        Curieux.
 
-    Toujours prêt à explorer le monde.
-    </p>
-    `,
+        Rieur.
 
-    temoignages: [
-        {
-            nom: "Grand-papa",
-            role: "Gardien des premiers jours",
-            media: ""
-        },
-        {
-            nom: "Lucienne",
-            role: "Gardienne des premiers souvenirs",
-            media: ""
-        },
-        {
-            nom: "Charles",
-            role: "Gardien des premières aventures",
-            media: ""
-        }
-    ],
-
-    enigme: `
-    Même les plus courageux des Voyageurs savent qu'aucune quête ne commence le ventre vide.
-
-    Le Livre parle d'une première halte.
-
-    Une halte simple.
-
-    Dorée.
-
-    Croustillante.
-
-   D'un lieu qui réchauffe le coeur des brave par son odeur familière.
-
-    <br><br>
-
-    <strong>Quelle sera la première étape de ton voyage ?</strong>
-    `,
-
-    reponse: "la boulangerie",
-
-    revelation: `
-    <h3>La première étape est révélée</h3>
-
-    <p>
-    Le Livre ne pouvait commencer ton trentième été autrement.
-    </p>
-
-    <p class="destination">
-    <strong>Une halte pour un petit déjeuner de champion.</strong>
-    </p>
-
-    <p>
-    comme chaque voyageur est maître de sa propre quête, tu peux donc choisir la destination.
-    </p>
-
-    <p class="retour-livre">
-    Le Livre ne te révélera rien de plus pour l'instant.<br>
-    <strong>Retourne à ses pages.</strong>
-    </p>
-    `,
-
-    motSuivant: "ENFANCE"
-},
-
-{
-    titre: "Chapitre II",
-
-    texte: `
-    <p class="histoire">
-    Les chemins que l'on parcourt enfant semblent parfois les plus petits.
-
-    Pourtant, ce sont souvent eux qui nous mènent le plus loin.
-
-    Lorsque le Voyageur apprit enfin à marcher, le monde grandit avec lui.
-
-    Chaque sentier devenait une aventure.
-
-    Chaque forêt cachait un royaume.
-
-    Chaque journée semblait pouvoir durer éternellement.
-    </p>
-    `,
-
-    temoignages: [
-        {
-            nom: "Message des Gardiens",
-            role: "Compagnons des premières grandes aventures",
-            media: ""
-        }
-    ],
-
-    enigme: `
-    Les routes deviennent parfois longues.
-
-    Et lorsque le corps réclame une pause, même les plus grands Voyageurs savent qu'il faut savoir s'arrêter.
-
-    Cherche un endroit où l'on ne vient ni pour courir,
-
-    ni pour combattre,
-
-    mais pour se laisser entièrement prendre en charge.
-
-    <br><br>
-
-    <strong>Quelle est la prochaine étape ?</strong>
-    `,
-
-    reponse: "second breakfast",
-
-   revelation: `
-    <div class="destination">
-
-        <div class="heure">🕛 PROCHAINE ÉTAPE — 12H00</div>
-
-        <h3>Le prochain rendez-vous</h3>
-
-        <p>
-        Le Livre t'indique maintenant la prochaine destination.
+        Toujours prêt à explorer le monde.
         </p>
+        `,
 
-        <p>
-        ⚓ <strong>Le Port</strong><br>
-        Planche-Inférieure 5<br>
-        1700 Fribourg
+        temoignages: [
+
+            {
+                nom: "Grand-papa",
+                role: "Gardien des premiers jours",
+                media: ""
+            },
+
+            {
+                nom: "Lucienne",
+                role: "Gardienne des premiers souvenirs",
+                media: ""
+            },
+
+            {
+                nom: "Charles",
+                role: "Gardien des premières aventures",
+                media: ""
+            }
+
+        ],
+
+        enigme: `
+        Même les plus courageux des Voyageurs savent
+        qu'aucune quête ne commence le ventre vide.
+
+        Le Livre parle d'une première halte.
+
+        Une halte simple.
+
+        Dorée.
+
+        Croustillante.
+
+        Et qui se déguste généralement encore chaude.
+
+        <br><br>
+
+        <strong>
+        Quelle sera la première étape de ton voyage ?
+        </strong>
+        `,
+
+        reponse: "croissant",
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                ☀️ PREMIÈRE ÉTAPE
+            </div>
+
+            <h3>
+                Le petit-déjeuner du Voyageur
+            </h3>
+
+            <p>
+                Le Livre ne pouvait commencer ton
+                trentième été autrement.
+            </p>
+
+            <p>
+                🥐 <strong>Un croissant.</strong>
+            </p>
+
+            <p>
+                Le lieu sera choisi sur le chemin.
+            </p>
+
+            <p>
+                <strong>
+                🕐 Heure : quand tu le souhaiteras ce matin.
+                </strong>
+            </p>
+
+        </div>
+
+        `,
+
+        motSuivant: "ENFANCE"
+    },
+
+
+    // ==================================================
+    // CHAPITRE II
+    // ==================================================
+
+    {
+        titre: "Chapitre II — Les Sentiers de l'Enfance",
+
+        texte: `
+        <p class="histoire">
+        Les chemins que l'on parcourt enfant semblent parfois
+        les plus petits.
+
+        Pourtant, ce sont souvent eux qui nous mènent le plus loin.
+
+        Lorsque le Voyageur apprit enfin à marcher,
+        le monde grandit avec lui.
+
+        Chaque sentier devenait une aventure.
+
+        Chaque forêt cachait un royaume.
+
+        Chaque journée semblait pouvoir durer éternellement.
         </p>
+        `,
 
-        <p>
-        <strong>🕐 Rendez-vous : 12h00</strong>
+        temoignages: [
+
+            {
+                nom: "Ami 1",
+                role: "Compagnon des premières grandes aventures",
+                media: ""
+            }
+
+        ],
+
+        enigme: `
+        Les routes deviennent parfois longues.
+
+        Et lorsque le corps réclame une pause,
+        même les plus grands Voyageurs savent
+        qu'il faut savoir s'arrêter.
+
+        Cherche un endroit où l'on ne vient ni pour courir,
+
+        ni pour combattre,
+
+        mais pour se laisser entièrement prendre en charge.
+
+        <br><br>
+
+        <strong>
+        Quelle est la prochaine étape ?
+        </strong>
+        `,
+
+        reponse: "massage",
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                💆 PROCHAINE ÉTAPE — 16H45
+            </div>
+
+            <h3>
+                Une halte pour le Voyageur
+            </h3>
+
+            <p>
+                Après tant de routes parcourues,
+                même les plus grands aventuriers doivent
+                parfois s'accorder un moment de repos.
+            </p>
+
+            <p>
+                💆 <strong>Au Cocooning Institut</strong>
+                <br>
+                Place des Alpes 26
+                <br>
+                1630 Bulle
+            </p>
+
+            <p>
+                <strong>
+                🕐 Rendez-vous : 16h45
+                </strong>
+            </p>
+
+        </div>
+
+        `,
+
+        motSuivant: "COMPAGNONS"
+    },
+
+
+    // ==================================================
+    // CHAPITRE III
+    // ==================================================
+
+    {
+        titre: "Chapitre III — Les Grandes Routes",
+
+        texte: `
+        <p class="histoire">
+        Il arrive un moment où les chemins tracés
+        par les autres ne suffisent plus.
+
+        Le Voyageur doit alors choisir lesquels emprunter.
+
+        Certains détours deviennent des découvertes.
+
+        Certaines erreurs deviennent des enseignements.
+
+        Et certaines rencontres changent pour toujours
+        la direction du voyage.
         </p>
+        `,
 
-    </div>
+        temoignages: [
 
-    <p class="retour-livre">
-    Tu connais désormais le lieu et l'heure.<br><br>
-    <strong>Retourne au Livre pour poursuivre ton voyage.</strong>
-    </p>
-`,
+            {
+                nom: "Ami 2",
+                role: "Compagnon de route",
+                media: ""
+            }
 
-    motSuivant: "COMPAGNONS"
-},
+        ],
 
-{
-    titre: "Chapitre III",
+        enigme: `
+        Une nouvelle épreuve t'attend.
 
-    texte: `
-    <p class="histoire">
-    Il arrive un moment où les chemins tracés par les autres ne suffisent plus.
+        Cette fois, il faudra retrouver un lieu où
+        deux Voyageurs peuvent s'affronter,
 
-    Le Voyageur doit alors choisir lesquels emprunter.
+        courir,
 
-    Certains détours deviennent des découvertes.
+        viser,
 
-    Certaines erreurs deviennent des enseignements.
+        et surtout essayer de ne pas envoyer la balle
+        dans les contrées lointaines.
 
-    Et certaines rencontres changent pour toujours la direction du voyage.
-    </p>
-    `,
+        <br><br>
 
-    temoignages: [
-        {
-            nom: "Message des Gardiens",
-            role: "Les compagnons de route",
-            media: ""
-        }
-    ],
+        <strong>
+        Où dois-tu te rendre ?
+        </strong>
+        `,
 
-    enigme: `
-    Une nouvelle épreuve t'attend.
+        reponse: "padel",
 
-    Cette fois, il faudra retrouver un lieu où deux Voyageurs peuvent s'affronter,
+        revelation: `
 
-    courir,
+        <div class="destination">
 
-    viser,
+            <div class="heure">
+                🎾 PROCHAINE ÉTAPE — 18H00
+            </div>
 
-    et surtout essayer de ne pas envoyer la balle dans les contrées lointaines.
+            <h3>
+                L'épreuve des compagnons
+            </h3>
 
-    <br><br>
+            <p>
+                Une nouvelle épreuve t'attend.
+            </p>
 
-    <strong>Où dois-tu te rendre ?</strong>
-    `,
+            <p>
+                🎾 <strong>Padel</strong>
+            </p>
 
-    reponse: "padel",
+            <p>
+                <strong>
+                🕐 Rendez-vous : 18h00
+                </strong>
+                <br>
+                Devant les terrains de tennis à Bulle.
+            </p>
 
-    revelation: `
-    <h3>Une nouvelle épreuve t'attend</h3>
+        </div>
 
-    <p class="destination">
-    🎾 <strong>Padel</strong><br><br>
-    Rendez-vous à <strong>18h00</strong> devant les terrains de tennis à Bulle.
-    </p>
+        `,
 
-    <p>
-    Prépare-toi à montrer que les années de voyage ont fait de toi un redoutable aventurier.
-    </p>
+        motSuivant: "COMPAGNIE"
+    },
 
-    <p class="retour-livre">
-    Le prochain chemin ne se trouve pas ici.<br>
-    <strong>Retourne au Livre.</strong>
-    </p>
-    `,
 
-    motSuivant: "COMPAGNIE"
-},
+    // ==================================================
+    // CHAPITRE IV
+    // ==================================================
 
-{
-    titre: "Chapitre IV — La Compagnie",
+    {
+        titre: "Chapitre IV — La Compagnie",
 
-    texte: `
-    <p class="histoire">
-    Aucun Voyageur ne traverse le monde entièrement seul.
+        texte: `
+        <p class="histoire">
+        Aucun Voyageur ne traverse le monde entièrement seul.
 
-    Au fil des années, de nouveaux visages apparurent sur son chemin.
+        Au fil des années, de nouveaux visages apparurent
+        sur son chemin.
 
-    Certains ne firent qu'un bout de route.
+        Certains ne firent qu'un bout de route.
 
-    D'autres choisirent d'y rester.
+        D'autres choisirent d'y rester.
 
-    Ils devinrent sa Compagnie.
+        Ils devinrent sa Compagnie.
 
-    Et le Voyageur découvrit alors que les plus grandes richesses ne se trouvent pas dans les coffres,
+        Et le Voyageur découvrit alors que les plus grandes
+        richesses ne se trouvent pas dans les coffres,
 
-    mais dans les personnes avec lesquelles on choisit de partager la route.
-    </p>
-    `,
+        mais dans les personnes avec lesquelles
+        on choisit de partager la route.
+        </p>
+        `,
 
-    temoignages: [
-        {
-            nom: "Les sœurs",
-            role: "Compagnes de route depuis toujours",
-            media: ""
-        }
-    ],
+        temoignages: [
 
-    enigme: `
-    Les Voyageurs savent qu'après les grandes épreuves,
+            {
+                nom: "Les sœurs",
+                role: "Compagnes de route depuis toujours",
+                media: ""
+            }
 
-    vient parfois le moment de s'asseoir,
+        ],
 
-    de lever son verre,
+        enigme: `
+        Les Voyageurs savent qu'après les grandes épreuves,
 
-    et de profiter simplement de la compagnie de ceux qui nous entourent.
+        vient parfois le moment de s'asseoir,
 
-    <br><br>
+        de lever son verre,
 
-    Le Livre parle d'un jardin caché.
+        et de profiter simplement de la compagnie
+        de ceux qui nous entourent.
 
-    <br><br>
+        <br><br>
 
-    <strong>Que t'annonce-t-il ?</strong>
-    `,
+        Le Livre parle d'un jardin caché.
 
-    reponse: "verre",
+        <br><br>
 
-    revelation: `
-    <h3>Une halte parmi les compagnons</h3>
+        <strong>
+        Que t'annonce-t-il ?
+        </strong>
+        `,
 
-    <p>
-    Ce soir, les Voyageurs se retrouvent autour d'un verre.
-    </p>
+        reponse: "verre",
 
-    <p class="destination">
-    🌿 <strong>Côté Jardin</strong><br>
-    Rue de la Sionge 4<br>
-    1630 Bulle<br><br>
-    <strong>19h30</strong>
-    </p>
+        revelation: `
 
-    <p>
-    Coordonnées du lieu :
-    </p>
+        <div class="destination">
 
-    <p>
-    <strong>Rue de la Sionge 4, 1630 Bulle</strong>
-    </p>
+            <div class="heure">
+                🌿 PROCHAINE ÉTAPE — 19H30
+            </div>
 
-    <p class="retour-livre">
-    Une dernière partie de l'histoire t'attend.<br>
-    <strong>Retourne au Livre.</strong>
-    </p>
-    `,
+            <h3>
+                Le jardin des compagnons
+            </h3>
 
-    motSuivant: "EPREUVE"
-},
+            <p>
+                Après l'effort vient le temps
+                de lever son verre.
+            </p>
 
-{
-    titre: "Chapitre V — Les Épreuves",
+            <p>
+                🌿 <strong>Côté Jardin</strong>
+                <br>
+                Rue de la Sionge 4
+                <br>
+                1630 Bulle
+            </p>
 
-    texte: `
-    <p class="histoire">
-    Aucun voyage ne se déroule exactement comme prévu.
+            <p>
+                <strong>
+                🕐 Rendez-vous : 19h30
+                </strong>
+            </p>
 
-    Les cartes sont parfois incomplètes.
+        </div>
 
-    Les détours plus nombreux que prévu.
+        `,
 
-    Les tempêtes arrivent sans prévenir.
+        motSuivant: "EPREUVE"
+    },
 
-    Mais ce sont souvent ces chemins-là qui révèlent ce que le Voyageur porte réellement en lui.
-    </p>
-    `,
 
-    temoignages: [
-        {
-            nom: "Marion",
-            role: "Gardienne du cœur",
-            media: ""
-        },
-        {
-            nom: "Maman",
-            role: "Gardienne des premiers chapitres",
-            media: ""
-        },
-        {
-            nom: "Cathi",
-            role: "Gardienne de la route",
-            media: ""
-        }
-    ],
+    // ==================================================
+    // CHAPITRE V
+    // ==================================================
 
-    enigme: `
-    Le Voyageur a traversé suffisamment d'épreuves pour mériter une dernière récompense.
+    {
+        titre: "Chapitre V — Les Épreuves",
 
-    Une récompense simple.
+        texte: `
+        <p class="histoire">
+        Aucun voyage ne se déroule exactement comme prévu.
 
-    Ronde.
+        Les cartes sont parfois incomplètes.
 
-    Chaude.
+        Les détours plus nombreux que prévu.
 
-    Et que l'on partage généralement autour d'une table.
+        Les tempêtes arrivent sans prévenir.
 
-    <br><br>
+        Mais ce sont souvent ces chemins-là qui révèlent
+        ce que le Voyageur porte réellement en lui.
+        </p>
+        `,
 
-    <strong>Quelle sera la prochaine étape ?</strong>
-    `,
+        temoignages: [
 
-    reponse: "pizza",
+            {
+                nom: "Marion",
+                role: "Gardienne du cœur",
+                media: ""
+            },
 
-    revelation: `
-    <h3>Le dernier banquet</h3>
+            {
+                nom: "Maman",
+                role: "Gardienne des premiers chapitres",
+                media: ""
+            },
 
-    <p>
-    Le Livre t'accorde enfin une récompense digne d'un grand Voyageur.
-    </p>
+            {
+                nom: "Cathi",
+                role: "Gardienne de la route",
+                media: ""
+            }
 
-    <p class="destination">
-    🍕 <strong>Une pizza.</strong>
-    </p>
+        ],
 
-    <p>
-    Ton bon t'attend pour la suite de la soirée.
-    </p>
+        enigme: `
+        Le Voyageur a traversé suffisamment d'épreuves
+        pour mériter une dernière récompense.
 
-    <p class="retour-livre">
-    Mais avant cela...<br>
-    <strong>Retourne au Livre.</strong>
-    </p>
-    `,
+        Une récompense simple.
 
-    motSuivant: "REGARD"
-},
+        Ronde.
 
-{
-    titre: "Chapitre VI — Le Regard des Gardiens",
+        Chaude.
 
-    texte: `
-    <p class="histoire">
-    Aucun Voyageur ne peut voir son propre chemin dans son ensemble.
+        Et que l'on partage généralement autour d'une table.
 
-    Pour cela, il lui faut parfois emprunter le regard de ceux qui l'aiment.
+        <br><br>
 
-    Car nous avançons souvent sans mesurer ce que notre présence change dans la vie des autres.
+        <strong>
+        Quelle sera la prochaine étape ?
+        </strong>
+        `,
 
-    Un mot.
+        reponse: "pizza",
 
-    Un rire.
+        revelation: `
 
-    Une main tendue.
+        <div class="destination">
 
-    Autant de petites choses qui peuvent devenir immenses pour celui qui les reçoit.
-    </p>
-    `,
+            <div class="heure">
+                🍕 DERNIÈRE ÉTAPE — 20H30
+            </div>
 
-    temoignages: [
-        {
-            nom: "Les Gardiens",
-            role: "Pour la suite de ton aventure...",
-            media: ""
-        }
-    ],
+            <h3>
+                Le dernier banquet
+            </h3>
 
-    enigme: `
-    Il reste une dernière page.
+            <p>
+                Le Voyageur a traversé les routes,
+                les épreuves et les détours.
+            </p>
 
-    Mais celle-ci ne peut être ouverte par un simple mot de passage.
+            <p>
+                Il est maintenant temps de partager
+                un dernier repas.
+            </p>
 
-    Le Livre sait qu'elle appartient à quelqu'un qui marche depuis maintenant un certain temps aux côtés du Voyageur.
+            <p>
+                🍕 <strong>
+                Un bon pour la pizzeria t'attend.
+                </strong>
+            </p>
 
-    <br><br>
+            <p>
+                <strong>
+                🕐 À partir de 20h30
+                </strong>
+            </p>
 
-    <strong>Qui doit écrire la prochaine page ?</strong>
-    `,
+        </div>
 
-    reponse: "moi",
+        `,
 
-    revelation: `
-    <h3>Le Livre se tait.</h3>
+        motSuivant: "REGARD"
+    },
 
-    <p>
-    Certaines pages ne peuvent être écrites par les anciens livres.
-    </p>
 
-    <p>
-    Elles appartiennent à ceux qui connaissent le cœur du Voyageur mieux que personne.
-    </p>
+    // ==================================================
+    // CHAPITRE VI
+    // ==================================================
 
-    <p>
-    Les prochaines lignes ne sont plus les miennes.
-    </p>
+    {
+        titre: "Chapitre VI — Le Regard des Gardiens",
 
-    <p>
-    <strong>Je te les confie.</strong>
-    </p>
+        texte: `
+        <p class="histoire">
+        Aucun Voyageur ne peut voir son propre chemin
+        dans son ensemble.
 
-    <p class="retour-livre">
-    Retourne au carnet.
-    </p>
-    `,
+        Pour cela, il lui faut parfois emprunter
+        le regard de ceux qui l'aiment.
 
-    motSuivant: "TRIENTIEME"
-},
+        Car nous avançons souvent sans mesurer
+        ce que notre présence change dans la vie des autres.
 
-{
-    titre: "Chapitre VII — Le Trentième Été",
+        Un mot.
 
-    texte: `
-    <p class="histoire">
-    Il arrive parfois que deux Voyageurs empruntent des chemins différents sans savoir qu'ils avancent vers la même destination.
+        Un rire.
 
-    Puis leurs routes se croisent.
+        Une main tendue.
 
-    Et le voyage ne devient pas plus facile.
+        Autant de petites choses qui peuvent devenir
+        immenses pour celui qui les reçoit.
+        </p>
+        `,
 
-    Il devient simplement plus beau.
+        temoignages: [
 
-    Car certains compagnons finissent par devenir le foyer vers lequel on revient,
+            {
+                nom: "Les Gardiens",
+                role: "Pour la suite de ton aventure...",
+                media: ""
+            }
 
-    quelle que soit la longueur du voyage.
-    </p>
-    `,
+        ],
 
-    temoignages: [],
+        enigme: `
+        Il reste une dernière page.
 
-    enigme: "",
+        Mais celle-ci ne peut être ouverte
+        par un simple mot de passage.
 
-    reponse: "",
+        Le Livre sait qu'elle appartient à quelqu'un
+        qui marche depuis maintenant un certain temps
+        aux côtés du Voyageur.
 
-    revelation: `
-    <h3>Les dernières pages appartiennent à quelqu'un d'autre.</h3>
+        <br><br>
 
-    <p>
-    Le Livre a raconté le voyage jusqu'ici.
-    </p>
+        <strong>
+        Qui doit écrire la prochaine page ?
+        </strong>
+        `,
 
-    <p>
-    Il est maintenant temps de laisser une autre voix parler.
-    </p>
-    `,
+        reponse: "moi",
 
-    motSuivant: ""
-}
+        revelation: `
+
+        <div class="destination">
+
+            <h3>
+                Le Livre se tait.
+            </h3>
+
+            <p>
+                Certaines pages ne peuvent être écrites
+                par les anciens livres.
+            </p>
+
+            <p>
+                Elles appartiennent à ceux qui connaissent
+                le cœur du Voyageur mieux que personne.
+            </p>
+
+            <p>
+                Les prochaines lignes ne sont plus les miennes.
+            </p>
+
+            <p>
+                <strong>
+                Je te les confie.
+                </strong>
+            </p>
+
+        </div>
+
+        `,
+
+        motSuivant: "TRIENTIEME"
+    },
+
+
+    // ==================================================
+    // CHAPITRE VII
+    // ==================================================
+
+    {
+        titre: "Chapitre VII — Le Trentième Été",
+
+        texte: `
+        <p class="histoire">
+        Il arrive parfois que deux Voyageurs empruntent
+        des chemins différents sans savoir qu'ils avancent
+        vers la même destination.
+
+        Puis leurs routes se croisent.
+
+        Et le voyage ne devient pas plus facile.
+
+        Il devient simplement plus beau.
+
+        Car certains compagnons finissent par devenir
+        le foyer vers lequel on revient,
+
+        quelle que soit la longueur du voyage.
+        </p>
+        `,
+
+        temoignages: [],
+
+        enigme: "",
+
+        reponse: "",
+
+        revelation: `
+
+        <div class="destination">
+
+            <h3>
+                Les dernières pages
+            </h3>
+
+            <p>
+                Le Livre a raconté le voyage jusqu'ici.
+            </p>
+
+            <p>
+                Il est maintenant temps de laisser
+                une autre voix parler.
+            </p>
+
+        </div>
+
+        `,
+
+        motSuivant: ""
+    }
 
 ];
 
@@ -512,6 +675,7 @@ const chapitres = [
 document.getElementById("begin").onclick = function () {
 
     cover.style.display = "none";
+
     intro.classList.remove("hidden");
 
 };
@@ -551,7 +715,9 @@ function afficherChapitre(numero) {
     `;
 
 
-    // Témoignages
+    // ==================================================
+    // TEMOIGNAGES
+    // ==================================================
 
     if (chapitre.temoignages.length > 0) {
 
@@ -562,11 +728,15 @@ function afficherChapitre(numero) {
         <h3>Les Chroniqueurs</h3>
 
         <p>
-        Certains souvenirs ne peuvent être enfermés dans les pages d'un livre.
-        Ils vivent encore dans la mémoire de ceux qui ont marché à tes côtés.
+        Certains souvenirs ne peuvent être enfermés
+        dans les pages d'un livre.
+
+        Ils vivent encore dans la mémoire de ceux
+        qui ont marché à tes côtés.
         </p>
 
         `;
+
 
         chapitre.temoignages.forEach(personne => {
 
@@ -574,24 +744,41 @@ function afficherChapitre(numero) {
 
             <div class="videoCard">
 
-                <strong>${personne.nom}</strong>
+                <strong>
+                    ${personne.nom}
+                </strong>
 
                 <br>
 
-                <small>${personne.role}</small>
+                <small>
+                    ${personne.role}
+                </small>
 
                 <br><br>
 
                 ${
                     personne.media
+
                     ?
-                    `<a href="${personne.media}" target="_blank">
-                        <button>Ouvrir le souvenir</button>
-                    </a>`
+
+                    `
+                    <a
+                        href="${personne.media}"
+                        target="_blank"
+                    >
+                        <button>
+                            Ouvrir le souvenir
+                        </button>
+                    </a>
+                    `
+
                     :
-                    `<button disabled>
+
+                    `
+                    <button disabled>
                         Souvenir à venir
-                    </button>`
+                    </button>
+                    `
                 }
 
             </div>
@@ -603,7 +790,9 @@ function afficherChapitre(numero) {
     }
 
 
-    // Chapitre VII : pas d'énigme
+    // ==================================================
+    // ENIGME
+    // ==================================================
 
     if (chapitre.enigme) {
 
@@ -611,9 +800,13 @@ function afficherChapitre(numero) {
 
         <hr>
 
-        <h3>L'Épreuve</h3>
+        <h3>
+            L'Épreuve
+        </h3>
 
-        <p>${chapitre.enigme}</p>
+        <p>
+            ${chapitre.enigme}
+        </p>
 
         <input
             id="reponse"
@@ -641,6 +834,7 @@ function afficherChapitre(numero) {
 
     `;
 
+
     content.innerHTML = html;
 
 }
@@ -656,13 +850,16 @@ function verifier() {
 
     if (!champ) return;
 
+
     const reponse = champ.value
         .toLowerCase()
         .trim()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
 
+
     const chapitre = chapitres[chapitreActuel];
+
 
     const bonneReponse = chapitre.reponse
         .toLowerCase()
@@ -671,7 +868,32 @@ function verifier() {
         .replace(/[\u0300-\u036f]/g, "");
 
 
+    // ==================================================
+    // BONNE REPONSE
+    // ==================================================
+
     if (reponse === bonneReponse) {
+
+        let boutonSuivant = "";
+
+
+        // S'il existe un chapitre suivant,
+        // on affiche le bouton.
+
+        if (chapitreActuel + 1 < chapitres.length) {
+
+            boutonSuivant = `
+
+            <button onclick="chapitreSuivant()">
+
+                Accéder au chapitre suivant
+
+            </button>
+
+            `;
+
+        }
+
 
         document.getElementById("resultat").innerHTML = `
 
@@ -679,25 +901,87 @@ function verifier() {
 
             ${chapitre.revelation}
 
+
+            <div class="transition-livre">
+
+                <hr>
+
+                <h3>
+                    📖 Le Livre se referme...
+                </h3>
+
+                <p>
+                    Une nouvelle page t'attend
+                    dans ton carnet.
+                </p>
+
+                <p>
+                    Prends le temps de découvrir
+                    la suite de ton histoire avant
+                    de poursuivre ton voyage.
+                </p>
+
+                <p>
+                    <strong>
+                        Retourne au Livre.
+                    </strong>
+                </p>
+
+                ${boutonSuivant}
+
+            </div>
+
         </div>
 
         `;
 
     }
 
+
+    // ==================================================
+    // MAUVAISE REPONSE
+    // ==================================================
+
     else {
 
         document.getElementById("resultat").innerHTML = `
 
         <p>
-        ❌ Le Livre ne reconnaît pas cette réponse.
+            ❌ Le Livre ne reconnaît pas cette réponse.
         </p>
 
         <p>
-        Relis attentivement les indices...
+            Relis attentivement les indices...
         </p>
 
         `;
+
+    }
+
+}
+
+
+// ======================================================
+// CHAPITRE SUIVANT
+// ======================================================
+
+function chapitreSuivant() {
+
+    if (chapitreActuel + 1 < chapitres.length) {
+
+        afficherChapitre(chapitreActuel + 1);
+
+
+        // Retour en haut de la page
+        // particulièrement utile sur téléphone.
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
 
     }
 
