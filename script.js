@@ -627,14 +627,9 @@ const chapitres = [
 
         temoignages: [
 
-            // ==================================================
-            // GARDIENNE DU COEUR
-            // ==================================================
-
             {
                 nom: "La Gardienne du cœur",
                 role: "Gardienne du cœur",
-
                 type: "photosTexte",
 
                 photos: [
@@ -703,14 +698,9 @@ const chapitres = [
             },
 
 
-            // ==================================================
-            // GARDIENNE DU FOYER
-            // ==================================================
-
             {
                 nom: "La Gardienne du foyer",
                 role: "Gardienne du foyer",
-
                 type: "photoTexte",
 
                 photo: "Souvenirs/EloiMarion.jpeg",
@@ -848,29 +838,18 @@ const chapitres = [
             },
 
 
-            // ==================================================
-            // GARDIENNE DE TOUJOURS
-            // ==================================================
-
             {
                 nom: "La Gardienne de toujours",
                 role: "Gardienne de toujours",
-
                 type: "photoAudio",
 
                 photo: "Souvenirs/EloiNadja.jpeg",
-
                 media: "Souvenirs/Nadja.mp3",
-
                 format: "audio/mpeg"
             }
 
         ],
 
-
-        // ==================================================
-        // ENIGME
-        // ==================================================
 
         enigme: `
         Le soleil commence doucement à descendre.
@@ -899,11 +878,6 @@ const chapitres = [
         `,
 
         reponse: "cote jardin",
-
-
-        // ==================================================
-        // REVELATION
-        // ==================================================
 
         revelation: `
 
@@ -1049,7 +1023,7 @@ function afficherChapitre(numero) {
                 <br><br>
 
                 <button
-                    onclick="ouvrirSouvenir(${index})"
+                    onclick="window.ouvrirSouvenir(${index})"
                 >
                     Accéder au souvenir
                 </button>
@@ -1060,10 +1034,6 @@ function afficherChapitre(numero) {
 
         });
 
-
-        // ==================================================
-        // ZONE DES SOUVENIRS
-        // ==================================================
 
         html += `
 
@@ -1151,7 +1121,7 @@ function afficherChapitre(numero) {
 
         <br><br>
 
-        <button onclick="verifier()">
+        <button onclick="window.verifier()">
             Valider
         </button>
 
@@ -1185,6 +1155,8 @@ function ouvrirSouvenir(index) {
     const souvenir = chapitre.temoignages[index];
 
     const zone = document.getElementById("souvenir");
+
+    if (!zone) return;
 
 
     // ==================================================
@@ -1463,10 +1435,6 @@ function ouvrirSouvenir(index) {
     }
 
 
-    // ==================================================
-    // DEFILEMENT VERS LE SOUVENIR
-    // ==================================================
-
     zone.scrollIntoView({
         behavior: "smooth",
         block: "start"
@@ -1503,10 +1471,6 @@ function verifier() {
         .replace(/[\u0300-\u036f]/g, "");
 
 
-    // ==================================================
-    // BONNE REPONSE
-    // ==================================================
-
     if (reponse === bonneReponse) {
 
         let boutonSuivant = "";
@@ -1516,7 +1480,7 @@ function verifier() {
 
             boutonSuivant = `
 
-            <button onclick="chapitreSuivant()">
+            <button onclick="window.chapitreSuivant()">
 
                 Accéder au chapitre suivant
 
@@ -1532,7 +1496,6 @@ function verifier() {
         <div class="revelation">
 
             ${chapitre.revelation}
-
 
             <div class="transition-livre">
 
@@ -1569,11 +1532,6 @@ function verifier() {
 
     }
 
-
-    // ==================================================
-    // MAUVAISE REPONSE
-    // ==================================================
-
     else {
 
         document.getElementById("resultat").innerHTML = `
@@ -1599,18 +1557,29 @@ function verifier() {
 
 function chapitreSuivant() {
 
-    if (chapitreActuel + 1 < chapitres.length) {
+    const prochainChapitre = chapitreActuel + 1;
 
-        afficherChapitre(chapitreActuel + 1);
+
+    if (prochainChapitre < chapitres.length) {
+
+        chapitreActuel = prochainChapitre;
+
+        afficherChapitre(prochainChapitre);
 
         window.scrollTo({
-
             top: 0,
-
             behavior: "smooth"
-
         });
 
     }
 
 }
+
+
+// ======================================================
+// REND LES FONCTIONS ACCESSIBLES AUX BOUTONS
+// ======================================================
+
+window.ouvrirSouvenir = ouvrirSouvenir;
+window.verifier = verifier;
+window.chapitreSuivant = chapitreSuivant;
