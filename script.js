@@ -267,13 +267,14 @@ const chapitres = [
 
         Mais il ne restera pas longtemps seul.
 
-        Le prochain rendez-vous se trouve dans une ville
-        où l'on peut entendre l'eau accompagner les pas
+        Le prochain rendez-vous se trouve dans la ville
+        où tu te trouves
+        Où l'on peut entendre l'eau accompagner les pas
         de ceux qui traversent ses rues.
 
         <br><br>
 
-        Cherche un lieu dont le nom évoque naturellement
+        Cherche un lieu dont le nom évoque l'eau,
         les voyages, les départs et les arrivées.
 
         <br><br>
@@ -283,7 +284,7 @@ const chapitres = [
         </strong>
         `,
 
-        reponse: "port",
+        reponse: "Le port",
 
         revelation: `
         <div class="destination">
