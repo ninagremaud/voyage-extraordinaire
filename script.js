@@ -10,7 +10,7 @@ const content = document.getElementById("content");
 const chapitres = [
 
 {
-    titre: "Chapitre I — Les Premiers Pas",
+    titre: "Chapitre I",
 
     texte: `
     <p class="histoire">
@@ -61,14 +61,14 @@ const chapitres = [
 
     Croustillante.
 
-    Et qui se déguste généralement encore chaude.
+   D'un lieu qui réchauffe le coeur des brave par son odeur familière.
 
     <br><br>
 
     <strong>Quelle sera la première étape de ton voyage ?</strong>
     `,
 
-    reponse: "croissant",
+    reponse: "la boulangerie",
 
     revelation: `
     <h3>La première étape est révélée</h3>
@@ -78,11 +78,11 @@ const chapitres = [
     </p>
 
     <p class="destination">
-    🥐 <strong>Une halte pour un croissant.</strong>
+    <strong>Une halte pour un petit déjeuner de champion.</strong>
     </p>
 
     <p>
-    Le lieu sera choisi sur le chemin.
+    comme chaque voyageur est maître de sa propre quête, tu peux donc choisir la destination.
     </p>
 
     <p class="retour-livre">
@@ -95,7 +95,7 @@ const chapitres = [
 },
 
 {
-    titre: "Chapitre II — Les Sentiers de l'Enfance",
+    titre: "Chapitre II",
 
     texte: `
     <p class="histoire">
@@ -115,8 +115,8 @@ const chapitres = [
 
     temoignages: [
         {
-            nom: "Ami 1",
-            role: "Compagnon des premières grandes aventures",
+            nom: "Message des Gardiens",
+            role: "Compagnons des premières grandes aventures",
             media: ""
         }
     ],
@@ -137,37 +137,42 @@ const chapitres = [
     <strong>Quelle est la prochaine étape ?</strong>
     `,
 
-    reponse: "massage",
+    reponse: "second breakfast",
 
-    revelation: `
-    <h3>Une halte de repos t'attend</h3>
+   revelation: `
+    <div class="destination">
 
-    <p>
-    Le Voyageur a rendez-vous à :
-    </p>
+        <div class="heure">🕛 PROCHAINE ÉTAPE — 12H00</div>
 
-    <p class="destination">
-    💆 <strong>Au Cocooning Institut</strong><br>
-    Place des Alpes 26<br>
-    1630 Bulle<br><br>
-    <strong>16h45</strong>
-    </p>
+        <h3>Le prochain rendez-vous</h3>
 
-    <p>
-    Il est temps de laisser les routes derrière toi quelques instants.
-    </p>
+        <p>
+        Le Livre t'indique maintenant la prochaine destination.
+        </p>
+
+        <p>
+        ⚓ <strong>Le Port</strong><br>
+        Planche-Inférieure 5<br>
+        1700 Fribourg
+        </p>
+
+        <p>
+        <strong>🕐 Rendez-vous : 12h00</strong>
+        </p>
+
+    </div>
 
     <p class="retour-livre">
-    Le Livre s'arrête ici pour le moment.<br>
-    <strong>Retourne à ses pages pour poursuivre ton aventure.</strong>
+    Tu connais désormais le lieu et l'heure.<br><br>
+    <strong>Retourne au Livre pour poursuivre ton voyage.</strong>
     </p>
-    `,
+`,
 
     motSuivant: "COMPAGNONS"
 },
 
 {
-    titre: "Chapitre III — Les Grandes Routes",
+    titre: "Chapitre III",
 
     texte: `
     <p class="histoire">
@@ -185,8 +190,8 @@ const chapitres = [
 
     temoignages: [
         {
-            nom: "Ami 2",
-            role: "Compagnon de route",
+            nom: "Message des Gardiens",
+            role: "Les compagnons de route",
             media: ""
         }
     ],
