@@ -223,16 +223,16 @@ const chapitres = [
                 nom: "Compagnon 1",
                 role: "Compagnon de route",
                 type: "audio",
-                media: "Souvenirs/Fx.ogg",
-                format: "audio/ogg"
+                media: "Souvenirs/Fx.mp3",
+                format: "audio/mpeg"
             },
 
             {
                 nom: "Compagnon 2",
                 role: "Compagnon de route",
                 type: "audio",
-                media: "Souvenirs/CharlesAmi.ogg",
-                format: "audio/ogg"
+                media: "Souvenirs/CharlesAmi.mp3",
+                format: "audio/mpeg"
             },
 
             {
@@ -496,8 +496,8 @@ const chapitres = [
                 nom: "Gardienne 1",
                 role: "Gardienne du chemin",
                 type: "audio",
-                media: "Souvenirs/Manu.ogg",
-                format: "audio/ogg"
+                media: "Souvenirs/Manu.mp3",
+                format: "audio/mpeg"
             },
 
             {
@@ -516,8 +516,8 @@ const chapitres = [
                 nom: "Gardienne 3",
                 role: "Gardienne du chemin",
                 type: "audio",
-                media: "Souvenirs/Marisa.ogg",
-                format: "audio/ogg"
+                media: "Souvenirs/Marisa.mp3",
+                format: "audio/mpeg"
             },
 
             {
@@ -712,7 +712,6 @@ function afficherChapitre(numero) {
 
         // ==================================================
         // ZONE DES SOUVENIRS
-        // PLACEE AVANT LA GALERIE
         // ==================================================
 
         html += `
