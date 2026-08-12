@@ -227,49 +227,37 @@ const chapitres = [
             {
                 nom: "Compagnon 1",
                 role: "Compagnon de route",
-
                 type: "audio",
-
                 media: "Souvenirs/Fx.ogg",
-
                 format: "audio/ogg"
             },
 
             {
                 nom: "Compagnon 2",
                 role: "Compagnon de route",
-
                 type: "audio",
-
                 media: "Souvenirs/CharlesAmi.ogg",
-
                 format: "audio/ogg"
             },
 
             {
                 nom: "Compagnon 3",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Lucas.mp4"
             },
 
             {
                 nom: "Compagnon 4",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Robin.mp4"
             },
 
             {
                 nom: "Compagnon 5",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Guillaume.mp4"
             }
 
@@ -364,46 +352,33 @@ const chapitres = [
         </p>
         `,
 
-
-        // ==================================================
-        // COMPAGNONS
-        // ==================================================
-
         temoignages: [
 
             {
                 nom: "Compagnon 1",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Christophe.mp4"
             },
 
             {
                 nom: "Compagnon 2",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Arnaud.mp4"
             },
 
             {
                 nom: "Compagnon 3",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Benhur.mp4"
             },
 
             {
                 nom: "Compagnon 4",
                 role: "Compagnon de route",
-
                 type: "videos",
-
                 media: [
                     "Souvenirs/Fabio1.mp4",
                     "Souvenirs/Fabio2.mp4"
@@ -413,18 +388,11 @@ const chapitres = [
             {
                 nom: "Compagnon 5",
                 role: "Compagnon de route",
-
                 type: "video",
-
                 media: "Souvenirs/Raph.mp4"
             }
 
         ],
-
-
-        // ==================================================
-        // GALERIE
-        // ==================================================
 
         galerie: [
             "Enfant.jpeg",
@@ -433,11 +401,6 @@ const chapitres = [
             "Enfant8.jpeg",
             "Enfant9.jpeg"
         ],
-
-
-        // ==================================================
-        // ENIGME
-        // ==================================================
 
         enigme: `
         Après avoir partagé un repas avec tes Compagnons
@@ -466,11 +429,6 @@ const chapitres = [
         `,
 
         reponse: "cocooning",
-
-
-        // ==================================================
-        // REVELATION
-        // ==================================================
 
         revelation: `
 
@@ -577,7 +535,8 @@ function afficherChapitre(numero) {
         </h3>
 
         <p>
-        ${numero === 0
+        ${
+            numero === 0
             ? "Certains souvenirs ne peuvent être enfermés dans les pages d'un livre. Ils vivent encore dans la mémoire de ceux qui ont marché à tes côtés."
             : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
         }
@@ -615,6 +574,18 @@ function afficherChapitre(numero) {
             `;
 
         });
+
+
+        // ==================================================
+        // ZONE DES SOUVENIRS
+        // PLACEE AVANT LA GALERIE
+        // ==================================================
+
+        html += `
+
+        <div id="souvenir"></div>
+
+        `;
 
     }
 
@@ -667,17 +638,6 @@ function afficherChapitre(numero) {
         `;
 
     }
-
-
-    // ==================================================
-    // ZONE DES SOUVENIRS
-    // ==================================================
-
-    html += `
-
-    <div id="souvenir"></div>
-
-    `;
 
 
     // ==================================================
@@ -857,7 +817,6 @@ function ouvrirSouvenir(index) {
 
             </video>
 
-
             <video
                 class="souvenirVideo"
                 controls
@@ -922,6 +881,10 @@ function ouvrirSouvenir(index) {
 
     }
 
+
+    // ==================================================
+    // DEFILEMENT VERS LE SOUVENIR
+    // ==================================================
 
     zone.scrollIntoView({
         behavior: "smooth",
