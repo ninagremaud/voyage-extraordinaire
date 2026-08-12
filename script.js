@@ -43,9 +43,7 @@ const chapitres = [
             {
                 nom: "Lucienne",
                 role: "Gardien des premiers pas",
-
                 type: "photoTexte",
-
                 photo: "Souvenirs/Lucienne.jpeg",
 
                 texte: `
@@ -118,9 +116,7 @@ const chapitres = [
             {
                 nom: "Charles",
                 role: "Gardien des premiers pas",
-
                 type: "video",
-
                 media: "Souvenirs/Charles.mp4"
             }
 
@@ -194,7 +190,6 @@ const chapitres = [
             </p>
 
         </div>
-
         `
     },
 
@@ -325,7 +320,6 @@ const chapitres = [
             </p>
 
         </div>
-
         `
     },
 
@@ -466,7 +460,140 @@ const chapitres = [
             </p>
 
         </div>
+        `
+    },
 
+
+    // ==================================================
+    // CHAPITRE IV — LES GARDIENNES DU CHEMIN
+    // ==================================================
+
+    {
+        titre: "Chapitre IV — Les Gardiennes du Chemin",
+
+        texte: `
+        <p class="histoire">
+        Il existe des Voyageurs que l'on ne rencontre pas
+        en chemin.
+
+        Ils étaient là bien avant le départ.
+
+        Ils connaissent les premières versions de nous,
+        celles que le temps a parfois recouvertes,
+        mais qui ne disparaissent jamais vraiment.
+
+        Certaines personnes connaissent le chemin
+        depuis presque aussi longtemps que nous-mêmes.
+
+        Et parmi elles, il y a celles que l'on appelle
+        simplement nos sœurs.
+        </p>
+        `,
+
+        temoignages: [
+
+            {
+                nom: "Gardienne 1",
+                role: "Gardienne du chemin",
+                type: "audio",
+                media: "Souvenirs/Manu.ogg",
+                format: "audio/ogg"
+            },
+
+            {
+                nom: "Gardienne 2",
+                role: "Gardienne du chemin",
+                type: "videos",
+                media: [
+                    "Souvenirs/Vero1.mp4",
+                    "Souvenirs/Vero2.mp4",
+                    "Souvenirs/Vero3.mp4",
+                    "Souvenirs/Vero4.mp4"
+                ]
+            },
+
+            {
+                nom: "Gardienne 3",
+                role: "Gardienne du chemin",
+                type: "audio",
+                media: "Souvenirs/Marisa.ogg",
+                format: "audio/ogg"
+            },
+
+            {
+                nom: "Gardienne 4",
+                role: "Gardienne du chemin",
+                type: "video",
+                media: "Souvenirs/Steph.mp4"
+            }
+
+        ],
+
+        galerie: [
+            "Ado.jpeg"
+        ],
+
+        enigme: `
+        Le Voyageur a maintenant repris des forces.
+
+        Il est temps de poursuivre son chemin.
+
+        Mais cette fois, la prochaine étape demandera
+        un peu plus d'énergie, un peu plus de mouvement,
+        et peut-être quelques réflexes.
+
+        <br><br>
+
+        Le prochain rendez-vous est à <strong>18h00</strong>.
+
+        <br><br>
+
+        Les Voyageurs qui connaissent bien les terrains
+        savent qu'une balle, une raquette et un filet
+        peuvent suffire à transformer quelques heures
+        en véritable aventure.
+
+        <br><br>
+
+        <strong>
+        Où dois-tu te rendre ?
+        </strong>
+        `,
+
+        reponse: "tennis",
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                🎾 PROCHAINE ÉTAPE — 18H00
+            </div>
+
+            <h3>
+                Le prochain défi
+            </h3>
+
+            <p>
+                Le Voyageur reprend maintenant
+                le chemin du terrain.
+            </p>
+
+            <p>
+                🎾 <strong>Le tennis à Bulle</strong>
+            </p>
+
+            <p>
+                <strong>
+                🕐 Rendez-vous : 18h00
+                </strong>
+            </p>
+
+            <p>
+                Retrouve-moi devant le tennis.
+            </p>
+
+        </div>
         `
     }
 
@@ -531,14 +658,21 @@ function afficherChapitre(numero) {
         <hr>
 
         <h3>
-            ${numero === 0 ? "Les Gardiens" : "Les Compagnons de route"}
+            ${numero === 0
+                ? "Les Gardiens"
+                : numero === 3
+                    ? "Les Gardiennes du chemin"
+                    : "Les Compagnons de route"
+            }
         </h3>
 
         <p>
         ${
             numero === 0
             ? "Certains souvenirs ne peuvent être enfermés dans les pages d'un livre. Ils vivent encore dans la mémoire de ceux qui ont marché à tes côtés."
-            : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
+            : numero === 3
+                ? "Certaines personnes connaissent le chemin depuis presque toujours. Elles ont vu grandir le Voyageur et continuent de marcher à ses côtés."
+                : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
         }
         </p>
 
@@ -781,10 +915,36 @@ function ouvrirSouvenir(index) {
 
 
     // ==================================================
-    // DEUX VIDEOS
+    // PLUSIEURS VIDEOS
     // ==================================================
 
     else if (souvenir.type === "videos") {
+
+        let videosHTML = "";
+
+        souvenir.media.forEach(video => {
+
+            videosHTML += `
+
+            <video
+                class="souvenirVideo"
+                controls
+                playsinline
+            >
+
+                <source
+                    src="${video}"
+                    type="video/mp4"
+                >
+
+                Ton navigateur ne peut pas lire cette vidéo.
+
+            </video>
+
+            `;
+
+        });
+
 
         zone.innerHTML = `
 
@@ -798,39 +958,7 @@ function ouvrirSouvenir(index) {
                 <em>${souvenir.role}</em>
             </p>
 
-            <p>
-                Deux souvenirs attendent ici.
-            </p>
-
-            <video
-                class="souvenirVideo"
-                controls
-                playsinline
-            >
-
-                <source
-                    src="${souvenir.media[0]}"
-                    type="video/mp4"
-                >
-
-                Ton navigateur ne peut pas lire cette vidéo.
-
-            </video>
-
-            <video
-                class="souvenirVideo"
-                controls
-                playsinline
-            >
-
-                <source
-                    src="${souvenir.media[1]}"
-                    type="video/mp4"
-                >
-
-                Ton navigateur ne peut pas lire cette vidéo.
-
-            </video>
+            ${videosHTML}
 
         </div>
 
