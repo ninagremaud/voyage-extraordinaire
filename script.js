@@ -2,6 +2,8 @@ const cover = document.getElementById("cover");
 const intro = document.getElementById("intro");
 const content = document.getElementById("content");
 
+let chapitreActuel = 0;
+
 
 // ======================================================
 // CHAPITRE I — PREMIERS PAS
@@ -36,12 +38,11 @@ const chapitres = [
 
             {
                 nom: "Lucienne",
-
                 role: "Gardien des premiers pas",
 
-                type: "lucienne",
+                type: "photoTexte",
 
-               photo: "Souvenirs/Lucienne.jpeg",
+                photo: "Souvenirs/Lucienne.jpeg",
 
                 texte: `
                 <p>
@@ -113,14 +114,11 @@ const chapitres = [
 
             {
                 nom: "Charles",
-
                 role: "Gardien des premiers pas",
 
-                type: "lien",
+                type: "video",
 
-                media: "https://drive.google.com/file/d/1TRV-BZ1WVWQVEfG3kVGJ2L6nYxUMt-Cz/view?usp=sharing",
-
-                texte: ""
+                media: "Souvenirs/Charles.mp4"
             }
 
         ],
@@ -224,7 +222,7 @@ document.getElementById("next").onclick = function () {
 
 
 // ======================================================
-// AFFICHER UN CHAPITRE
+// AFFICHER LE CHAPITRE
 // ======================================================
 
 function afficherChapitre(numero) {
@@ -369,11 +367,11 @@ function ouvrirSouvenir(index) {
     const zone = document.getElementById("souvenir");
 
 
-    // --------------------------------------------------
-    // SOUVENIR DE LUCIENNE
-    // --------------------------------------------------
+    // ==================================================
+    // PHOTO + TEXTE DE LUCIENNE
+    // ==================================================
 
-    if (souvenir.type === "lucienne") {
+    if (souvenir.type === "photoTexte") {
 
         zone.innerHTML = `
 
@@ -389,15 +387,8 @@ function ouvrirSouvenir(index) {
 
             <img
                 src="${souvenir.photo}"
-                alt="Souvenir de Lucienne"
-                style="
-                    width:100%;
-                    max-width:500px;
-                    display:block;
-                    margin:25px auto;
-                    border-radius:3px;
-                    box-shadow:0 8px 25px rgba(0,0,0,.25);
-                "
+                alt="Souvenir"
+                class="souvenirImage"
             >
 
             <div class="souvenirText">
@@ -410,26 +401,53 @@ function ouvrirSouvenir(index) {
 
         `;
 
-        zone.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+    }
+
+
+    // ==================================================
+    // VIDEO DE CHARLES
+    // ==================================================
+
+    else if (souvenir.type === "video") {
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <video
+                class="souvenirVideo"
+                controls
+                playsinline
+            >
+
+                <source
+                    src="${souvenir.media}"
+                    type="video/mp4"
+                >
+
+                Ton navigateur ne peut pas lire cette vidéo.
+
+            </video>
+
+        </div>
+
+        `;
 
     }
 
 
-    // --------------------------------------------------
-    // SOUVENIR AVEC LIEN
-    // --------------------------------------------------
-
-    else if (souvenir.type === "lien") {
-
-        window.open(
-            souvenir.media,
-            "_blank"
-        );
-
-    }
+    zone.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 
 }
 
@@ -461,10 +479,6 @@ function verifier() {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
 
-
-    // ==================================================
-    // BONNE REPONSE
-    // ==================================================
 
     if (reponse === bonneReponse) {
 
@@ -515,10 +529,6 @@ function verifier() {
     }
 
 
-    // ==================================================
-    // MAUVAISE REPONSE
-    // ==================================================
-
     else {
 
         document.getElementById("resultat").innerHTML = `
@@ -544,16 +554,18 @@ function verifier() {
 
 function chapitreSuivant() {
 
-    /*
-    Pour le moment, nous n'avons volontairement
-    qu'un seul chapitre dans ce test.
+    if (chapitreActuel + 1 < chapitres.length) {
 
-    Les autres chapitres seront réintégrés
-    lorsque leurs souvenirs seront prêts.
-    */
+        afficherChapitre(chapitreActuel + 1);
 
-    alert(
-        "Le prochain chapitre sera ajouté lorsque les souvenirs seront prêts."
-    );
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    }
 
 }
