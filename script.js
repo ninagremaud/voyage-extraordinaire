@@ -41,8 +41,8 @@ const chapitres = [
         temoignages: [
 
             {
-                nom: "Lucienne",
-                role: "Gardien des premiers pas",
+                nom: "Gardienne des premiers pas",
+                role: "",
                 type: "photoTexte",
                 photo: "Souvenirs/Lucienne.jpeg",
 
@@ -112,8 +112,8 @@ const chapitres = [
             },
 
             {
-                nom: "Charles",
-                role: "Gardien des premiers pas",
+                nom: "Gardien des premiers pas",
+                role: "",
                 type: "video",
                 media: "Souvenirs/Charles.mp4"
             }
@@ -145,7 +145,7 @@ const chapitres = [
 
         Croustillante.
 
-        Et qui se déguste généralement encore chaude.
+        Qui sait réchauffer le coeur des braves de son odeur douce a des kilomètres à la ronde.
 
         <br><br>
 
@@ -154,13 +154,13 @@ const chapitres = [
         </strong>
         `,
 
-        reponse: "croissant",
+        reponse: "La boulangerie",
 
         revelation: `
         <div class="destination">
 
             <div class="heure">
-                ☀️ PREMIÈRE ÉTAPE
+                 PREMIÈRE ÉTAPE
             </div>
 
             <h3>
@@ -172,16 +172,16 @@ const chapitres = [
             </p>
 
             <p>
-                🥐 <strong>Un croissant.</strong>
+                 <strong> Des croissants ou les délices de ton choix.</strong>
             </p>
 
             <p>
-                Le lieu sera choisi sur le chemin.
+                Et comme tout voyageur est mâitre de son chemin,libre a toi de choisir l'endroit.
             </p>
 
             <p>
                 <strong>
-                🕐 Heure : quand tu le souhaiteras ce matin.
+                🕐 Heure : avant de partir chez l'arracheur de chicots.
                 </strong>
             </p>
 
