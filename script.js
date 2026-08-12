@@ -595,6 +595,349 @@ const chapitres = [
 
         </div>
         `
+    },
+
+
+    // ==================================================
+    // CHAPITRE V — LES GARDIENNES DU COEUR
+    // ==================================================
+
+    {
+        titre: "Chapitre V — Les Gardiennes du Cœur",
+
+        texte: `
+        <p class="histoire">
+
+        Certaines personnes connaissent le Voyageur
+        sous toutes ses formes.
+
+        Elles ont vu les premiers pas,
+        les détours, les réussites,
+        les doutes et les renaissances.
+
+        Elles connaissent une partie de son histoire
+        que peu de personnes peuvent raconter.
+
+        Et parfois, au milieu de toutes les routes
+        que l'on emprunte, il existe un foyer
+        vers lequel on peut toujours revenir.
+
+        </p>
+        `,
+
+        temoignages: [
+
+            // ==================================================
+            // GARDIENNE DU COEUR
+            // ==================================================
+
+            {
+                nom: "La Gardienne du cœur",
+                role: "Gardienne du cœur",
+
+                type: "photosTexte",
+
+                photos: [
+                    "Souvenirs/EloiMarion.jpeg",
+                    "Souvenirs/EloiMarion2.jpeg"
+                ],
+
+                texte: `
+                <p>
+                <strong>Joyeux 30 ans à mon cher petit frère !</strong>
+                </p>
+
+                <p>
+                30 ans… seulement !
+                </p>
+
+                <p>
+                On a vécu ensemble une belle tranche de vie,
+                et j’en garde de très beaux souvenirs !
+                Je suis très reconnaissante d’avoir eu la chance
+                de garder ce lien avec toi !
+                La vie m’a fait ce cadeau !
+                </p>
+
+                <p>
+                Aujourd’hui, tu entres dans un nouveau chapitre,
+                et pas des moindres : de nouvelles études de médecine
+                à Lausanne, une nouvelle ville, une nouvelle vie,
+                de nouveaux défis… bref, un vrai tournant.
+                </p>
+
+                <p>
+                Mais si quelqu’un peut relever ce défi avec courage,
+                intelligence et détermination, c’est bien toi,
+                tu l’as déjà montré cette dernière année avec brio !
+                </p>
+
+                <p>
+                Je suis très fière de toi.
+                N’oublie pas cette force que tu as en toi qui te permet,
+                si tu le souhaites, de réaliser de grandes choses !
+                </p>
+
+                <p>
+                Commencer la médecine à 30 ans, ce n’est pas
+                “trop tard”, c’est au contraire une preuve magnifique
+                que rien n’est impossible quand on a la volonté d’y croire.
+                </p>
+
+                <p>
+                Tu resteras toujours mon petit frère,
+                et tu peux compter sur moi.
+                </p>
+
+                <p>
+                Je te souhaite un anniversaire merveilleux,
+                une nouvelle vie à Lausanne pleine de bonheur,
+                de réussite et de belles surprises.
+                </p>
+
+                <p>
+                Bon anniversaire mon frère, et bonne route
+                pour cette magnifique nouvelle aventure ! ❤️❤️
+                </p>
+                `
+            },
+
+
+            // ==================================================
+            // GARDIENNE DU FOYER
+            // ==================================================
+
+            {
+                nom: "La Gardienne du foyer",
+                role: "Gardienne du foyer",
+
+                type: "photoTexte",
+
+                photo: "Souvenirs/EloiMarion.jpeg",
+
+                texte: `
+                <p>
+                <strong>Quelques souvenirs d’Eloi,</strong>
+                </p>
+
+                <p>
+                Je me souviens d’abord d’une petite Tête Blonde
+                toute frisée, de grands yeux marrons et d’un regard
+                capable de vous faire croire qu’il avait déjà tout
+                compris à la vie… alors qu’il avait à peine quitté les couches !
+                </p>
+
+                <p>
+                C’était un enfant calme, doux et facile à vivre.
+                (Marion toujours bienveillante vous le confirmera).
+                Partageant son temps entre sa maman, sa sœur,
+                et notre Famille, où il est très vite devenu
+                notre cinquième enfant.
+                </p>
+
+                <p>
+                Il pouvait passer des heures à construire des legos…
+                (sûrement que c’est pour cette raison que son père
+                lui disait bien quelques années plus tard :
+                Tu feras un excellent ouvrier chez Piantino !)
+                et autant de temps à écouter mes histoires de chevaliers !
+                Bon, je ne sais toujours pas lequel de nous deux
+                y prenait le plus de plaisir.
+                </p>
+
+                <p>
+                A 12 ans, il est venu vivre avec nous à Farvagny.
+                Une grande étape pour lui et un petit bouleversement
+                pour toute la maison.
+                </p>
+
+                <p>
+                Mais on s’est vite habitué les uns aux autres
+                tout en sachant qu’il entrait dans une colonie
+                exclusivement féminine.
+                </p>
+
+                <p>
+                Au CO de Farvagny, il s’est fait des copains
+                à une vitesse impressionnante.
+                Il faut dire qu’Eloi a toujours eu ce talent
+                de créer des amitiés solides.
+                La plupart sont encore présents dans sa vie.
+                </p>
+
+                <p>
+                Côté sport, il s’est découvert une passion pour le basket
+                et abandonna le tennis.
+                Il excellait sur les terrains de basket…
+                beaucoup plus que lors de nos randonnées familiales,
+                qu’il semblait considérer comme une forme particulièrement
+                cruelle de punition.
+                </p>
+
+                <p>
+                Comme tout adolescent qui se respecte,
+                il a aussi voulu tester quelques limites.
+                Il y a eu la période des Fleurs du Mal !.
+                Disons qu’il a préféré faire ses expériences lui-même
+                plutôt que de croire les adultes sur paroles.
+                </p>
+
+                <p>
+                Et puis il y a le chapitre que je vais soigneusement éviter…
+                celui des filles.
+                Disons simplement qu’avec sa bouille de beau gosse,
+                il a laissé quelques cœurs en vrac sur son passage.
+                </p>
+
+                <p>
+                Le CO s’est déroulé sans trop de soucis.
+                Grâce à sa vive intelligence, il arrivait souvent
+                à s’en sortir avec un minimum d’efforts.
+                Une stratégie qui en faisait rêver certains
+                et désespérer parfois ses professeurs.
+                </p>
+
+                <p>
+                Puis sont venues les années de collège,
+                entrecoupées d’une année incroyable aux Etats-Unis.
+                Il y a vécu une aventure extraordinaire,
+                accueilli par une famille formidable
+                qui l’a adopté et dorloté.
+                </p>
+
+                <p>
+                A son retour, il poursuit son chemin de collégien.
+                Bac en poche, il s’est lancé dans les sciences biomédicales.
+                Personnellement, je le voyais en médecine…
+                Mais comme souvent avec Eloi, il avait déjà décidé
+                de tracer son propre chemin.
+                </p>
+
+                <p>
+                Devenu adulte, il a poursuivi son parcours avec sérieux,
+                intelligence et une belle détermination.
+                Derrière son calme et son humour discret mais piquant,
+                il a toujours eu une grande sensibilité et une force
+                tranquille qui forcent le respect.
+                </p>
+
+                <p>
+                Aujourd’hui, en repensant à tout ce chemin parcouru,
+                je ne peux qu’être fière de l’homme qu’il est devenu.
+                Fière de son parcours, de ses choix, de ses réussites…
+                mais surtout reconnaissante d’avoir eu la chance
+                partager un bout de chemin de sa vie.
+                </p>
+
+                <p>
+                Et si je devais résumer Eloi en quelques mots,
+                je dirais simplement : un garçon attachant, drôle,
+                intelligent et profondément humain.
+                Un de ceux qu’on n’oublie jamais même quand ils deviennent grands.
+                </p>
+
+                <p>
+                Et j’ajouterai un grand merci à Nina pour sa force de vie,
+                son entregent et son soutien durant toute cette dernière année.
+                </p>
+
+                <p>
+                <strong>Famille. ❤️</strong>
+                </p>
+                `
+            },
+
+
+            // ==================================================
+            // GARDIENNE DE TOUJOURS
+            // ==================================================
+
+            {
+                nom: "La Gardienne de toujours",
+                role: "Gardienne de toujours",
+
+                type: "photoAudio",
+
+                photo: "Souvenirs/EloiNadja.jpeg",
+
+                media: "Souvenirs/Nadja.mp3",
+
+                format: "audio/mpeg"
+            }
+
+        ],
+
+
+        // ==================================================
+        // ENIGME
+        // ==================================================
+
+        enigme: `
+        Le soleil commence doucement à descendre.
+
+        Le Voyageur a déjà parcouru une bonne partie
+        de son chemin aujourd'hui.
+
+        Il est maintenant temps de faire une halte
+        pour partager un verre et profiter encore
+        un peu de cette journée.
+
+        <br><br>
+
+        Le prochain rendez-vous est à <strong>19h30</strong>.
+
+        <br><br>
+
+        Cherche un endroit où l'on pourrait croire
+        que le jardin s'est installé au cœur de la ville.
+
+        <br><br>
+
+        <strong>
+        Quel sera le prochain lieu de notre aventure ?
+        </strong>
+        `,
+
+        reponse: "cote jardin",
+
+
+        // ==================================================
+        // REVELATION
+        // ==================================================
+
+        revelation: `
+
+        <div class="destination">
+
+            <div class="heure">
+                🍹 PROCHAINE ÉTAPE — 19H30
+            </div>
+
+            <h3>
+                Une dernière halte avant la nuit
+            </h3>
+
+            <p>
+                Le Voyageur est attendu pour partager
+                un verre dans un endroit un peu particulier.
+            </p>
+
+            <p>
+                🌿 <strong>Côté Jardin</strong>
+                <br>
+                Rue de la Sionge 4
+                <br>
+                1630 Bulle
+            </p>
+
+            <p>
+                <strong>
+                🕐 Rendez-vous : 19h30
+                </strong>
+            </p>
+
+        </div>
+        `
     }
 
 ];
@@ -658,11 +1001,14 @@ function afficherChapitre(numero) {
         <hr>
 
         <h3>
-            ${numero === 0
+            ${
+                numero === 0
                 ? "Les Gardiens"
                 : numero === 3
                     ? "Les Gardiennes du chemin"
-                    : "Les Compagnons de route"
+                    : numero === 4
+                        ? "Les Gardiennes"
+                        : "Les Compagnons de route"
             }
         </h3>
 
@@ -670,9 +1016,14 @@ function afficherChapitre(numero) {
         ${
             numero === 0
             ? "Certains souvenirs ne peuvent être enfermés dans les pages d'un livre. Ils vivent encore dans la mémoire de ceux qui ont marché à tes côtés."
+
             : numero === 3
                 ? "Certaines personnes connaissent le chemin depuis presque toujours. Elles ont vu grandir le Voyageur et continuent de marcher à ses côtés."
-                : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
+
+                : numero === 4
+                    ? "Certaines personnes connaissent le Voyageur depuis longtemps. Elles ont vu grandir son histoire, accompagné ses chemins et gardé précieusement une place pour lui dans leur cœur."
+
+                    : "Au fil du chemin, certains Voyageurs deviennent des Compagnons de route. Voici quelques voix et quelques souvenirs de ceux qui ont partagé une partie de ton aventure."
         }
         </p>
 
@@ -865,6 +1216,109 @@ function ouvrirSouvenir(index) {
                 ${souvenir.texte}
 
             </div>
+
+        </div>
+
+        `;
+
+    }
+
+
+    // ==================================================
+    // PLUSIEURS PHOTOS + TEXTE
+    // ==================================================
+
+    else if (souvenir.type === "photosTexte") {
+
+        let photosHTML = "";
+
+        souvenir.photos.forEach(photo => {
+
+            photosHTML += `
+
+            <img
+                src="${photo}"
+                alt="Souvenir"
+                class="souvenirImage"
+            >
+
+            `;
+
+        });
+
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <div class="souvenirPhotos">
+
+                ${photosHTML}
+
+            </div>
+
+            <div class="souvenirText">
+
+                ${souvenir.texte}
+
+            </div>
+
+        </div>
+
+        `;
+
+    }
+
+
+    // ==================================================
+    // PHOTO + AUDIO
+    // ==================================================
+
+    else if (souvenir.type === "photoAudio") {
+
+        zone.innerHTML = `
+
+        <div class="page souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
+
+            <p>
+                <em>${souvenir.role}</em>
+            </p>
+
+            <img
+                src="${souvenir.photo}"
+                alt="Souvenir"
+                class="souvenirImage"
+            >
+
+            <p>
+                Prends le temps d'écouter ce souvenir.
+            </p>
+
+            <audio
+                class="souvenirAudio"
+                controls
+            >
+
+                <source
+                    src="${souvenir.media}"
+                    type="${souvenir.format}"
+                >
+
+                Ton navigateur ne peut pas lire cet audio.
+
+            </audio>
 
         </div>
 
