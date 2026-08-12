@@ -615,3 +615,14 @@ input{
     }
 
 }
+.souvenirAudio{
+
+    width:90%;
+
+    max-width:500px;
+
+    display:block;
+
+    margin:25px auto;
+
+}
