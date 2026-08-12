@@ -47,16 +47,15 @@ const chapitres = [
                 photo: "Souvenirs/Lucienne.jpeg",
 
                 texte: `
-                <p>
-                <strong>Cher Eloi,</strong>
-                </p>
+                <p><strong>Cher Eloi,</strong></p>
 
                 <p>
                 Juste un petit mot de Tata …
                 </p>
 
                 <p>
-                30 ans, c’est comme une page blanche… sauf qu’elle commence avec plein de belles couleurs déjà passées :
+                30 ans, c’est comme une page blanche… sauf qu’elle commence
+                avec plein de belles couleurs déjà passées :
                 </p>
 
                 <ul>
@@ -92,8 +91,7 @@ const chapitres = [
                 </p>
 
                 <p>
-                Reste comme tu es et continue à propager
-                cette bonne humeur autour de toi.
+                Reste comme tu es et continue à propager cette bonne humeur autour de toi.
                 </p>
 
                 <p>
@@ -159,7 +157,6 @@ const chapitres = [
         reponse: "croissant",
 
         revelation: `
-
         <div class="destination">
 
             <div class="heure">
@@ -171,8 +168,7 @@ const chapitres = [
             </h3>
 
             <p>
-                Le Livre ne pouvait commencer ton
-                trentième été autrement.
+                Le Livre ne pouvait commencer ton trentième été autrement.
             </p>
 
             <p>
@@ -203,8 +199,7 @@ const chapitres = [
 
         texte: `
         <p class="histoire">
-        Les routes deviennent différentes lorsque l'on
-        cesse de les parcourir seul.
+        Les routes deviennent différentes lorsque l'on cesse de les parcourir seul.
 
         Au fil du voyage apparaissent de nouveaux visages.
 
@@ -291,7 +286,6 @@ const chapitres = [
         reponse: "port",
 
         revelation: `
-
         <div class="destination">
 
             <div class="heure">
@@ -303,8 +297,7 @@ const chapitres = [
             </h3>
 
             <p>
-                Le Livre t'indique maintenant
-                la prochaine destination.
+                Le Livre t'indique maintenant la prochaine destination.
             </p>
 
             <p>
@@ -397,12 +390,11 @@ const chapitres = [
         ],
 
         enigme: `
-        Après avoir partagé un repas avec tes Compagnons
-        de route, le voyage t'invite maintenant à ralentir.
+        Après avoir partagé un repas avec tes Compagnons de route,
+        le voyage t'invite maintenant à ralentir.
 
-        Les Elfes connaissent depuis longtemps
-        les vertus d'une halte où l'on prend soin
-        du corps et où l'on oublie, pendant un instant,
+        Les Elfes connaissent depuis longtemps les vertus d'une halte
+        où l'on prend soin du corps et où l'on oublie, pendant un instant,
         le tumulte du monde.
 
         <br><br>
@@ -411,9 +403,8 @@ const chapitres = [
 
         <br><br>
 
-        Cherche le lieu où le Voyageur pourra
-        enfin déposer son sac, fermer les yeux
-        et se laisser porter.
+        Cherche le lieu où le Voyageur pourra enfin déposer son sac,
+        fermer les yeux et se laisser porter.
 
         <br><br>
 
@@ -425,7 +416,6 @@ const chapitres = [
         reponse: "cocooning",
 
         revelation: `
-
         <div class="destination">
 
             <div class="heure">
@@ -437,9 +427,8 @@ const chapitres = [
             </h3>
 
             <p>
-                Le prochain lieu de ton aventure
-                est un endroit où le Voyageur
-                peut enfin ralentir.
+                Le prochain lieu de ton aventure est un endroit
+                où le Voyageur peut enfin ralentir.
             </p>
 
             <p>
@@ -455,8 +444,8 @@ const chapitres = [
             </p>
 
             <p>
-                Le moment est venu de prendre soin
-                de toi et de profiter de cette pause.
+                Le moment est venu de prendre soin de toi
+                et de profiter de cette pause.
             </p>
 
         </div>
@@ -473,8 +462,7 @@ const chapitres = [
 
         texte: `
         <p class="histoire">
-        Il existe des Voyageurs que l'on ne rencontre pas
-        en chemin.
+        Il existe des Voyageurs que l'on ne rencontre pas en chemin.
 
         Ils étaient là bien avant le départ.
 
@@ -485,8 +473,7 @@ const chapitres = [
         Certaines personnes connaissent le chemin
         depuis presque aussi longtemps que nous-mêmes.
 
-        Et parmi elles, il y a celles que l'on appelle
-        simplement nos sœurs.
+        Et parmi elles, il y a celles que l'on appelle simplement nos sœurs.
         </p>
         `,
 
@@ -563,7 +550,6 @@ const chapitres = [
         reponse: "tennis",
 
         revelation: `
-
         <div class="destination">
 
             <div class="heure">
@@ -575,8 +561,7 @@ const chapitres = [
             </h3>
 
             <p>
-                Le Voyageur reprend maintenant
-                le chemin du terrain.
+                Le Voyageur reprend maintenant le chemin du terrain.
             </p>
 
             <p>
@@ -599,7 +584,7 @@ const chapitres = [
 
 
     // ==================================================
-    // CHAPITRE V — LES GARDIENNES DU COEUR
+    // CHAPITRE V — LES GARDIENNES DU CŒUR
     // ==================================================
 
     {
@@ -608,24 +593,25 @@ const chapitres = [
         texte: `
         <p class="histoire">
 
-        Certaines personnes connaissent le Voyageur
-        sous toutes ses formes.
+        Certaines personnes connaissent le Voyageur sous toutes ses formes.
 
-        Elles ont vu les premiers pas,
-        les détours, les réussites,
+        Elles ont vu les premiers pas, les détours, les réussites,
         les doutes et les renaissances.
 
         Elles connaissent une partie de son histoire
         que peu de personnes peuvent raconter.
 
-        Et parfois, au milieu de toutes les routes
-        que l'on emprunte, il existe un foyer
-        vers lequel on peut toujours revenir.
+        Et parfois, au milieu de toutes les routes que l'on emprunte,
+        il existe un foyer vers lequel on peut toujours revenir.
 
         </p>
         `,
 
         temoignages: [
+
+            // ------------------------------------------
+            // GARDIENNE DU COEUR
+            // ------------------------------------------
 
             {
                 nom: "La Gardienne du cœur",
@@ -650,8 +636,7 @@ const chapitres = [
                 On a vécu ensemble une belle tranche de vie,
                 et j’en garde de très beaux souvenirs !
                 Je suis très reconnaissante d’avoir eu la chance
-                de garder ce lien avec toi !
-                La vie m’a fait ce cadeau !
+                de garder ce lien avec toi ! La vie m’a fait ce cadeau !
                 </p>
 
                 <p>
@@ -674,9 +659,9 @@ const chapitres = [
                 </p>
 
                 <p>
-                Commencer la médecine à 30 ans, ce n’est pas
-                “trop tard”, c’est au contraire une preuve magnifique
-                que rien n’est impossible quand on a la volonté d’y croire.
+                Commencer la médecine à 30 ans, ce n’est pas “trop tard”,
+                c’est au contraire une preuve magnifique que rien n’est
+                impossible quand on a la volonté d’y croire.
                 </p>
 
                 <p>
@@ -698,12 +683,14 @@ const chapitres = [
             },
 
 
+            // ------------------------------------------
+            // GARDIENNE DU FOYER — TEXTE UNIQUEMENT
+            // ------------------------------------------
+
             {
                 nom: "La Gardienne du foyer",
                 role: "Gardienne du foyer",
-                type: "photoTexte",
-
-                photo: "Souvenirs/EloiMarion.jpeg",
+                type: "texte",
 
                 texte: `
                 <p>
@@ -711,47 +698,39 @@ const chapitres = [
                 </p>
 
                 <p>
-                Je me souviens d’abord d’une petite Tête Blonde
-                toute frisée, de grands yeux marrons et d’un regard
-                capable de vous faire croire qu’il avait déjà tout
-                compris à la vie… alors qu’il avait à peine quitté les couches !
+                Je me souviens d’abord d’une petite Tête Blonde toute frisée,
+                de grands yeux marrons et d’un regard capable de vous faire croire
+                qu’il avait déjà tout compris à la vie… alors qu’il avait à peine quitté les couches !
                 </p>
 
                 <p>
                 C’était un enfant calme, doux et facile à vivre.
                 (Marion toujours bienveillante vous le confirmera).
-                Partageant son temps entre sa maman, sa sœur,
-                et notre Famille, où il est très vite devenu
-                notre cinquième enfant.
+                Partageant son temps entre sa maman, sa sœur, et notre Famille,
+                où il est très vite devenu notre cinquième enfant.
                 </p>
 
                 <p>
                 Il pouvait passer des heures à construire des legos…
-                (sûrement que c’est pour cette raison que son père
-                lui disait bien quelques années plus tard :
-                Tu feras un excellent ouvrier chez Piantino !)
+                (sûrement que c’est pour cette raison que son père lui disait
+                bien quelques années plus tard : Tu feras un excellent ouvrier chez Piantino !)
                 et autant de temps à écouter mes histoires de chevaliers !
-                Bon, je ne sais toujours pas lequel de nous deux
-                y prenait le plus de plaisir.
+                Bon, je ne sais toujours pas lequel de nous deux y prenait le plus de plaisir.
                 </p>
 
                 <p>
                 A 12 ans, il est venu vivre avec nous à Farvagny.
-                Une grande étape pour lui et un petit bouleversement
-                pour toute la maison.
+                Une grande étape pour lui et un petit bouleversement pour toute la maison.
                 </p>
 
                 <p>
-                Mais on s’est vite habitué les uns aux autres
-                tout en sachant qu’il entrait dans une colonie
-                exclusivement féminine.
+                Mais on s’est vite habitué les uns aux autres tout en sachant
+                qu’il entrait dans une colonie exclusivement féminine.
                 </p>
 
                 <p>
-                Au CO de Farvagny, il s’est fait des copains
-                à une vitesse impressionnante.
-                Il faut dire qu’Eloi a toujours eu ce talent
-                de créer des amitiés solides.
+                Au CO de Farvagny, il s’est fait des copains à une vitesse impressionnante.
+                Il faut dire qu’Eloi a toujours eu ce talent de créer des amitiés solides.
                 La plupart sont encore présents dans sa vie.
                 </p>
 
@@ -760,13 +739,11 @@ const chapitres = [
                 et abandonna le tennis.
                 Il excellait sur les terrains de basket…
                 beaucoup plus que lors de nos randonnées familiales,
-                qu’il semblait considérer comme une forme particulièrement
-                cruelle de punition.
+                qu’il semblait considérer comme une forme particulièrement cruelle de punition.
                 </p>
 
                 <p>
-                Comme tout adolescent qui se respecte,
-                il a aussi voulu tester quelques limites.
+                Comme tout adolescent qui se respecte, il a aussi voulu tester quelques limites.
                 Il y a eu la période des Fleurs du Mal !.
                 Disons qu’il a préféré faire ses expériences lui-même
                 plutôt que de croire les adultes sur paroles.
@@ -781,8 +758,8 @@ const chapitres = [
 
                 <p>
                 Le CO s’est déroulé sans trop de soucis.
-                Grâce à sa vive intelligence, il arrivait souvent
-                à s’en sortir avec un minimum d’efforts.
+                Grâce à sa vive intelligence, il arrivait souvent à s’en sortir
+                avec un minimum d’efforts.
                 Une stratégie qui en faisait rêver certains
                 et désespérer parfois ses professeurs.
                 </p>
@@ -791,24 +768,22 @@ const chapitres = [
                 Puis sont venues les années de collège,
                 entrecoupées d’une année incroyable aux Etats-Unis.
                 Il y a vécu une aventure extraordinaire,
-                accueilli par une famille formidable
-                qui l’a adopté et dorloté.
+                accueilli par une famille formidable qui l’a adopté et dorloté.
                 </p>
 
                 <p>
                 A son retour, il poursuit son chemin de collégien.
                 Bac en poche, il s’est lancé dans les sciences biomédicales.
                 Personnellement, je le voyais en médecine…
-                Mais comme souvent avec Eloi, il avait déjà décidé
-                de tracer son propre chemin.
+                Mais comme souvent avec Eloi, il avait déjà décidé de tracer son propre chemin.
                 </p>
 
                 <p>
                 Devenu adulte, il a poursuivi son parcours avec sérieux,
                 intelligence et une belle détermination.
                 Derrière son calme et son humour discret mais piquant,
-                il a toujours eu une grande sensibilité et une force
-                tranquille qui forcent le respect.
+                il a toujours eu une grande sensibilité et une force tranquille
+                qui forcent le respect.
                 </p>
 
                 <p>
@@ -837,6 +812,10 @@ const chapitres = [
                 `
             },
 
+
+            // ------------------------------------------
+            // GARDIENNE DE TOUJOURS
+            // ------------------------------------------
 
             {
                 nom: "La Gardienne de toujours",
@@ -879,7 +858,6 @@ const chapitres = [
         reponse: "cote jardin",
 
         revelation: `
-
         <div class="destination">
 
             <div class="heure">
@@ -935,7 +913,6 @@ const chapitres = [
             {
                 nom: "Ceux qui veillent sur toi",
                 role: "Pour la suite de ton aventure",
-
                 type: "souvenirFinal",
 
                 photo: "Souvenirs/Boubker.jpeg",
@@ -992,7 +969,6 @@ const chapitres = [
         reponse: "pizza",
 
         revelation: `
-
         <div class="destination">
 
             <div class="heure">
@@ -1155,18 +1131,16 @@ function afficherChapitre(numero) {
                     Accéder au souvenir
                 </button>
 
+                <div
+                    id="souvenir-${index}"
+                    class="souvenirContainer"
+                ></div>
+
             </div>
 
             `;
 
         });
-
-
-        html += `
-
-        <div id="souvenir"></div>
-
-        `;
 
     }
 
@@ -1281,7 +1255,7 @@ function ouvrirSouvenir(index) {
 
     const souvenir = chapitre.temoignages[index];
 
-    const zone = document.getElementById("souvenir");
+    const zone = document.getElementById(`souvenir-${index}`);
 
     if (!zone) return;
 
@@ -1294,21 +1268,44 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             <img
                 src="${souvenir.photo}"
                 alt="Souvenir"
                 class="souvenirImage"
             >
+
+            <div class="souvenirText">
+
+                ${souvenir.texte}
+
+            </div>
+
+        </div>
+
+        `;
+
+    }
+
+
+    // ==================================================
+    // TEXTE UNIQUEMENT
+    // ==================================================
+
+    else if (souvenir.type === "texte") {
+
+        zone.innerHTML = `
+
+        <div class="souvenirPage">
+
+            <h3>
+                ${souvenir.nom}
+            </h3>
 
             <div class="souvenirText">
 
@@ -1348,15 +1345,11 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             <div class="souvenirPhotos">
 
@@ -1385,15 +1378,11 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             <img
                 src="${souvenir.photo}"
@@ -1427,7 +1416,7 @@ function ouvrirSouvenir(index) {
 
 
     // ==================================================
-    // SOUVENIR FINAL — PHOTO + AUDIOS + VIDEOS
+    // SOUVENIR FINAL
     // ==================================================
 
     else if (souvenir.type === "souvenirFinal") {
@@ -1509,15 +1498,11 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             <img
                 src="${souvenir.photo}"
@@ -1557,15 +1542,11 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             <video
                 class="souvenirVideo"
@@ -1623,15 +1604,11 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             ${videosHTML}
 
@@ -1650,15 +1627,11 @@ function ouvrirSouvenir(index) {
 
         zone.innerHTML = `
 
-        <div class="page souvenirPage">
+        <div class="souvenirPage">
 
             <h3>
                 ${souvenir.nom}
             </h3>
-
-            <p>
-                <em>${souvenir.role}</em>
-            </p>
 
             <p>
                 Prends le temps d'écouter ce souvenir.
@@ -1685,10 +1658,18 @@ function ouvrirSouvenir(index) {
     }
 
 
-    zone.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
+    // ==================================================
+    // DESCENDRE JUSQU'AU SOUVENIR
+    // ==================================================
+
+    setTimeout(() => {
+
+        zone.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+
+    }, 100);
 
 }
 
@@ -1722,6 +1703,67 @@ function verifier() {
 
 
     if (reponse === bonneReponse) {
+
+
+        // ==================================================
+        // FIN DU SITE — CHAPITRE VI
+        // ==================================================
+
+        if (chapitreActuel === chapitres.length - 1) {
+
+            document.getElementById("resultat").innerHTML = `
+
+            <div class="revelation">
+
+                ${chapitre.revelation}
+
+                <div class="transition-livre">
+
+                    <hr>
+
+                    <h3>
+                        📖 Le voyage touche à sa fin.
+                    </h3>
+
+                    <p>
+                        Au fil de ces pages, tu as retrouvé
+                        des visages, des voix, des souvenirs
+                        et ceux qui ont marché un bout de chemin
+                        à tes côtés.
+                    </p>
+
+                    <p>
+                        Mais certaines choses ne peuvent être
+                        racontées par d'autres.
+                    </p>
+
+                    <p>
+                        <strong>
+                        Il reste une dernière page.<br>
+                        Une dernière histoire.<br>
+                        Celle qui t'est destinée.
+                        </strong>
+                    </p>
+
+                    <p>
+                        <strong>
+                        Retourne au Livre, Voyageur.
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+            `;
+
+            return;
+        }
+
+
+        // ==================================================
+        // CHAPITRES NORMAUX
+        // ==================================================
 
         let boutonSuivant = "";
 
@@ -1827,7 +1869,7 @@ function chapitreSuivant() {
 
 
 // ======================================================
-// REND LES FONCTIONS ACCESSIBLES AUX BOUTONS
+// REND LES FONCTIONS ACCESSIBLES
 // ======================================================
 
 window.ouvrirSouvenir = ouvrirSouvenir;
