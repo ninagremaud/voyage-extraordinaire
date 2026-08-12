@@ -6,7 +6,7 @@ let chapitreActuel = 0;
 
 
 // ======================================================
-// CHAPITRE I — PREMIERS PAS
+// CHAPITRE I — LES PREMIERS PAS
 // ======================================================
 
 const chapitres = [
@@ -34,10 +34,15 @@ const chapitres = [
         </p>
         `,
 
+
+        // ==================================================
+        // SOUVENIRS
+        // ==================================================
+
         temoignages: [
 
             {
-                nom: "",
+                nom: "Lucienne",
                 role: "Gardien des premiers pas",
 
                 type: "photoTexte",
@@ -113,7 +118,7 @@ const chapitres = [
 
 
             {
-                nom: "",
+                nom: "Charles",
                 role: "Gardien des premiers pas",
 
                 type: "video",
@@ -294,14 +299,53 @@ function afficherChapitre(numero) {
 
         });
 
-
-        html += `
-
-        <div id="souvenir"></div>
-
-        `;
-
     }
+
+
+    // ==================================================
+    // GALERIE DES PREMIERS SOUVENIRS
+    // ==================================================
+
+    html += `
+
+    <hr>
+
+    <h3>
+        Les premiers souvenirs
+    </h3>
+
+    <p>
+        Avant les grandes aventures,
+        il y eut tous ces petits instants.
+    </p>
+
+    <div class="galerie-souvenirs">
+
+        <img src="Souvenirs/bebe.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe1.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe2.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe3.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe4.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe5.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe6.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe7.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe8.jpeg" alt="Souvenir d'enfance">
+        <img src="Souvenirs/bebe9.jpeg" alt="Souvenir d'enfance">
+
+    </div>
+
+    `;
+
+
+    // ==================================================
+    // ZONE SOUVENIR
+    // ==================================================
+
+    html += `
+
+    <div id="souvenir"></div>
+
+    `;
 
 
     // ==================================================
@@ -565,62 +609,6 @@ function chapitreSuivant() {
             behavior: "smooth"
 
         });
-
-    }
-
-}
-/* ======================================================
-   GALERIE DES PREMIERS SOUVENIRS
-   ====================================================== */
-
-.galerie-souvenirs{
-
-    display:grid;
-
-    grid-template-columns:repeat(3, 1fr);
-
-    gap:12px;
-
-    margin:30px 0;
-
-}
-
-
-.galerie-souvenirs img{
-
-    width:100%;
-
-    aspect-ratio:1 / 1;
-
-    object-fit:cover;
-
-    border-radius:3px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.2);
-
-    cursor:pointer;
-
-    transition:.25s;
-
-}
-
-
-.galerie-souvenirs img:hover{
-
-    transform:scale(1.03);
-
-}
-
-
-/* Téléphone */
-
-@media (max-width:700px){
-
-    .galerie-souvenirs{
-
-        grid-template-columns:repeat(2, 1fr);
-
-        gap:10px;
 
     }
 
