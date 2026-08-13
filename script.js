@@ -692,7 +692,7 @@ const chapitres = [
             
             {
     nom: "La Gardienne d'un autre temps",
-    role: "Gardienne du cœur",
+    role: "",
     type: "audio",
     media: "Souvenirs/Therese2.mp3",
     format: "audio/mpeg"
