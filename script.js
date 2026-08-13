@@ -489,16 +489,16 @@ const chapitres = [
         temoignages: [
 
             {
-                nom: "Gardienne 1",
-                role: "Gardienne du chemin",
+                nom: "Gardienne du chemin",
+                role: "La voyageuse",
                 type: "audio",
                 media: "Souvenirs/Manu.mp3",
                 format: "audio/mpeg"
             },
 
             {
-                nom: "Gardienne 2",
-                role: "Gardienne du chemin",
+                nom: "Gardienne du chemin",
+                role: "La spirituelle",
                 type: "videos",
                 media: [
                     "Souvenirs/Vero1.mp4",
@@ -509,16 +509,16 @@ const chapitres = [
             },
 
             {
-                nom: "Gardienne 3",
-                role: "Gardienne du chemin",
+                nom: "Gardienne du chemin",
+                role: "L'érudie",
                 type: "audio",
                 media: "Souvenirs/Marisa.mp3",
                 format: "audio/mpeg"
             },
 
             {
-                nom: "Gardienne 4",
-                role: "Gardienne du chemin",
+                nom: "Gardienne du chemin",
+                role: "La botaniste",
                 type: "video",
                 media: "Souvenirs/Steph.mp4"
             }
@@ -623,7 +623,7 @@ const chapitres = [
 
             {
                 nom: "La Gardienne du cœur",
-                role: "Gardienne du cœur",
+                role: "",
                 type: "photosTexte",
 
                 photos: [
@@ -689,6 +689,14 @@ const chapitres = [
                 </p>
                 `
             },
+            
+            {
+    nom: "La Gardienne d'un autre temps",
+    role: "Gardienne du cœur",
+    type: "audio",
+    media: "Souvenirs/Therese2.mp3",
+    format: "audio/mpeg"
+},
 
 
             // ------------------------------------------
@@ -697,7 +705,7 @@ const chapitres = [
 
             {
                 nom: "La Gardienne du foyer",
-                role: "Gardienne du foyer",
+                role: "",
                 type: "texte",
 
                 texte: `
@@ -827,11 +835,11 @@ const chapitres = [
 
             {
                 nom: "La Gardienne de toujours",
-                role: "Gardienne de toujours",
+                role: "",
                 type: "photoAudio",
 
                 photo: "Souvenirs/EloiNadja.jpeg",
-                media: "Souvenirs/Nadja.mp3",
+                media: "Souvenirs/Nadja1.mp3",
                 format: "audio/mpeg"
             }
 
