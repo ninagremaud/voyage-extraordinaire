@@ -428,7 +428,7 @@ const chapitres = [
         <div class="destination">
 
             <div class="heure">
-                💆 PROCHAINE ÉTAPE — 16H45
+                 PROCHAINE ÉTAPE — 16H45
             </div>
 
             <h3>
