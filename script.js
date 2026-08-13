@@ -309,7 +309,7 @@ const chapitres = [
 
             <p>
                 <strong>
-                🕐 Rendez-vous : 12h00
+                🕐 Rendez-vous : 12h00 (ou avant...)
                 </strong>
             </p>
 
@@ -412,11 +412,17 @@ const chapitres = [
         <br><br>
 
         <strong>
-        Où dois-tu te rendre ?
+        Enigme : 
+        Je passe sans jamais revenir,
+        Je suis précieux sans avoir de prix.
+        Plus on me poursuit, plus je file,
+        Mais si tu ralentis, tu peux mieux me savourer.
+        On me perd sans s'en rendre compte, et pourtant,
+        Je suis notre bien le plus précieux. Qui suis-je ?
         </strong>
         `,
 
-        reponse: "",
+        reponse: "Le temps",
 
         revelation: `
         <div class="destination">
@@ -435,9 +441,9 @@ const chapitres = [
             </p>
 
             <p>
-                🌿 <strong>Au Cocooning</strong>
+                🌿 <strong></strong>
                 <br>
-                Bulle
+                Pl. des Alpes 26, 1630 Bulle
             </p>
 
             <p>
@@ -447,8 +453,8 @@ const chapitres = [
             </p>
 
             <p>
-                Le moment est venu de prendre soin de toi
-                et de profiter de cette pause.
+                Passe l'entrée, 
+                et cherche la porte qui t'inspire la douceur...
             </p>
 
         </div>
@@ -534,29 +540,29 @@ const chapitres = [
 
         <br><br>
 
-        Le prochain rendez-vous est à <strong>18h00</strong>.
+        Le prochain rendez-vous est à <strong>17h50</strong>.
 
         <br><br>
 
-        Les Voyageurs qui connaissent bien les terrains
-        savent qu'une balle, une raquette et un filet
-        peuvent suffire à transformer quelques heures
-        en véritable aventure.
+        Enigme :
 
-        <br><br>
+        <br>Je ne me vois pas, mais je me ressens,
+        Je grandis avec le temps et les moments partagés.
+        Je réchauffe le coeur dans les bons comme les mauvais jours.
+        Je me construit avec les autres, et peut durer toute une vie.<br>
 
         <strong>
-        Où dois-tu te rendre ?
+       Qui suis-je ?
         </strong>
         `,
 
-        reponse: "tennis",
+        reponse: "L'amitié",
 
         revelation: `
         <div class="destination">
 
             <div class="heure">
-                🎾 PROCHAINE ÉTAPE — 18H00
+                 PROCHAINE ÉTAPE — 18H00
             </div>
 
             <h3>
@@ -564,21 +570,20 @@ const chapitres = [
             </h3>
 
             <p>
-                Le Voyageur reprend maintenant le chemin du terrain.
+                Le Voyageur reprend maintenant le chemin vers un nouveau combat.
             </p>
 
             <p>
-                🎾 <strong>Le tennis à Bulle</strong>
+                 <strong>Rends-toi à la rue du Stade 50, 1630 Bulle</strong>
             </p>
 
             <p>
                 <strong>
-                🕐 Rendez-vous : 18h00
+                🕐 Rendez-vous : 17h50
                 </strong>
             </p>
 
             <p>
-                Retrouve-moi devant le tennis.
             </p>
 
         </div>
@@ -838,9 +843,7 @@ const chapitres = [
         Le Voyageur a déjà parcouru une bonne partie
         de son chemin aujourd'hui.
 
-        Il est maintenant temps de faire une halte
-        pour partager un verre et profiter encore
-        un peu de cette journée.
+        Il est maintenant temps de profiter d'une dernière halte.
 
         <br><br>
 
@@ -848,17 +851,16 @@ const chapitres = [
 
         <br><br>
 
-        Cherche un endroit où l'on pourrait croire
-        que le jardin s'est installé au cœur de la ville.
+        Va, voyageur...
 
         <br><br>
 
         <strong>
-        Quel sera le prochain lieu de notre aventure ?
+        Enigme : Comme les sages aiment le rappeler parfois, après l'effort vient...
         </strong>
         `,
 
-        reponse: "cote jardin",
+        reponse: "Le réconfort",
 
         revelation: `
         <div class="destination">
@@ -872,12 +874,11 @@ const chapitres = [
             </h3>
 
             <p>
-                Le Voyageur est attendu pour partager
-                un verre dans un endroit un peu particulier.
+                Le Voyageur est attendu pour étancher sa soiffe d'aventure.
             </p>
 
             <p>
-                🌿 <strong>Côté Jardin</strong>
+                🌿 <strong></strong>
                 <br>
                 Rue de la Sionge 4
                 <br>
@@ -969,45 +970,33 @@ const chapitres = [
         </strong>
         `,
 
-        reponse: "pizza",
+        reponse: "La pizzeria",
 
         revelation: `
         <div class="destination">
 
             <div class="heure">
-                🍕 DERNIÈRE ÉTAPE — 20H30
+                
             </div>
 
             <h3>
-                Le dernier repas du Voyageur
+        
             </h3>
 
             <p>
-                Après toutes ces aventures,
-                il est temps de terminer cette journée
-                autour d'une bonne pizza.
+                Après toutes ces aventures, le ventre du voyageur crie certainement famine.
+                Toutefois après ces émotions partagées,
+                il se peut que ses ressources soient épuisées.
+                Il est invité à déguster une pizza 
+                pour remplir son coeur aussi bien que son estomac.
+                Il est toutefois libre de choisir :
+                Terminer son périple dans cette dernière destination,
+                Ou reporter cette escale à un autre jour radieux, pour ne se reposer que mieux.
             </p>
 
             <p>
-                🍕 <strong>Ton bon pour une pizza</strong>
+                <strong></strong>
             </p>
-
-            <p>
-                <strong>
-                🕐 Rendez-vous : 20h30
-                </strong>
-            </p>
-
-            <div class="bon-pizzeria">
-
-                <p>
-                    🎟️ <strong>BON POUR UNE PIZZA</strong>
-                </p>
-
-                <p>
-                    Valable pour une dernière étape
-                    gourmande de cette journée.
-                </p>
 
             </div>
 
