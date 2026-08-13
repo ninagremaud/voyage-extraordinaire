@@ -343,29 +343,29 @@ const chapitres = [
         temoignages: [
 
             {
-                nom: "Compagnon 1",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "Le sanguin",
                 type: "video",
                 media: "Souvenirs/Christophe.mp4"
             },
 
             {
-                nom: "Compagnon 2",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "L'assoiffé",
                 type: "video",
                 media: "Souvenirs/Arnaud.mp4"
             },
 
             {
-                nom: "Compagnon 3",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "Le ravagé",
                 type: "video",
                 media: "Souvenirs/Benhur.mp4"
             },
 
             {
-                nom: "Compagnon 4",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "Le réfléchi",
                 type: "videos",
                 media: [
                     "Souvenirs/Fabio1.mp4",
@@ -374,8 +374,8 @@ const chapitres = [
             },
 
             {
-                nom: "Compagnon 5",
-                role: "Compagnon de route",
+                nom: "Compagnon de route",
+                role: "Le marginal",
                 type: "video",
                 media: "Souvenirs/Raph.mp4"
             }
@@ -391,10 +391,12 @@ const chapitres = [
         ],
 
         enigme: `
-        Après avoir partagé un repas avec tes Compagnons de route,
+        Après avoir maintenant repris suffisament de force,
         le voyage t'invite maintenant à ralentir.
+        Il est tout d'abord temps de profiter à ta guise 
+        des prochaines heures...
 
-        Les Elfes connaissent depuis longtemps les vertus d'une halte
+        Toutefois, les Elfes connaissent depuis longtemps les vertus d'une halte
         où l'on prend soin du corps et où l'on oublie, pendant un instant,
         le tumulte du monde.
 
@@ -405,7 +407,7 @@ const chapitres = [
         <br><br>
 
         Cherche le lieu où le Voyageur pourra enfin déposer son sac,
-        fermer les yeux et se laisser porter.
+        fermer les yeux et laisser derrière le poids du monde.
 
         <br><br>
 
@@ -414,7 +416,7 @@ const chapitres = [
         </strong>
         `,
 
-        reponse: "cocooning",
+        reponse: "",
 
         revelation: `
         <div class="destination">
