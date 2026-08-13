@@ -1676,23 +1676,21 @@ function verifier() {
 
     if (!champ) return;
 
+    const normaliserReponse = (texte) => {
+        return texte
+            .toLowerCase()
+            .trim()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[’‘`´]/g, "'")
+            .replace(/\s+/g, " ");
+    };
 
-    const reponse = champ.value
-        .toLowerCase()
-        .trim()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
-
+    const reponse = normaliserReponse(champ.value);
 
     const chapitre = chapitres[chapitreActuel];
 
-
-    const bonneReponse = chapitre.reponse
-        .toLowerCase()
-        .trim()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
-
+    const bonneReponse = normaliserReponse(chapitre.reponse);
 
     if (reponse === bonneReponse) {
 
